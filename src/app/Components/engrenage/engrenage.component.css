@@ -3,7 +3,7 @@
   left:0;
   top:50%;
   margin-left: 280px;
-  background: url(/assets/engrenage1.png)no-repeat;
+  /*background: url(assets/engrenage1.png)no-repeat;*/
   height:290px;
   width:305px;
   transform: translateY(-50%)  scale(0.6);
@@ -19,7 +19,7 @@
   }
 }
 #engrenage2{
-  background : url(/assets/engrenage2.png)no-repeat;
+  /*background : url(assets/engrenage2.png)no-repeat;*/
   position:absolute;
   left:0;
   top:27%;

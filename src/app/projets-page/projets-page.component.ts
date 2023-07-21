@@ -16,7 +16,7 @@ export class ProjetsPageComponent {
     ,'Ce projet est le site-web sur lequel vous vous trouvez qui est mon portfolio perso afin d\'en découvrir davantage sur moi: mon cursus scolaire, mes différents projets mécaniques et informatiques (personnels et académiques) et ainsi que mes loisirs. Le site a été dévéloppé à l\'aide du framework Angular 15.0.4. '
     ,'ID-meal est un projet codé entièrement en java, utilisation la programmation orientée objet, permettant d’à partir d’une sélection d’aliments de proposés des recettes adéquates'
     ,'Projet modélisant l’évolution d’une maladie sur la base du schéma MIR, codé avec Matlab'];
-  imageProjets=['/assets/ansys.gif', '/assets/golf.JPG','/assets/tableur.JPG','/assets/portfolio.JPG', '/assets/projetIdmeal2.JPG','/assets/grippe.JPG'];
+  imageProjets=['assets/ansys.gif', 'assets/golf.JPG','assets/tableur.JPG','assets/portfolio.JPG', 'assets/projetIdmeal2.JPG','assets/grippe.JPG'];
   symboleProjets=[
     [ '1','fa-solid fa-gears fa-3x'],
     ['2','fa-solid fa-terminal fa-2x', 'fa-solid fa-gears fa-3x'],

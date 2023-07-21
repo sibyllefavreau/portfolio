@@ -1,6 +1,6 @@
 #imagePrincipale{
   padding-top:60px;
-  background: url(/assets/accueil.jpg) no-repeat fixed 50% 50%;
+  /*background: url(assets/accueil.jpg) no-repeat fixed 50% 50%;*/
   background-size: cover;
   height: 600px;
 }
@@ -71,7 +71,7 @@ h1{
   margin-right: 375px;
 }
 #chapeau{
-  background : url(/assets/bac.png)no-repeat;
+  /*background : url(assets/bac.png)no-repeat;*/
   position:absolute;
   left:0;
   top:32%;
@@ -82,7 +82,7 @@ h1{
   transform: translateY(-50%) scale(1);
 }
 #livre{
-  background : url(/assets/livre.png)no-repeat;
+  /*background : url(assets/livre.png)no-repeat;*/
   position:absolute;
   left:0;
   top:75%;
@@ -212,7 +212,7 @@ h1{
 }
 #ecrire{
   position: absolute;
-  background : url(/assets/ecrire.png)no-repeat;
+  /*background : url(assets/ecrire.png)no-repeat;*/
   width:900px;
   height:700px;
   transform: scale(0.22);
@@ -221,7 +221,7 @@ h1{
 }
 #palette{
   position: absolute;
-  background : url(/assets/palettePeintre.png)no-repeat;
+  /*background : url(../../assets/palettePeintre.png) no-repeat;*/
   width:500px;
   height:450px;
   transform: scale(0.4);
@@ -230,7 +230,7 @@ h1{
 }
 #saxo{
   position: absolute;
-  background : url(/assets/saxo.png)no-repeat;
+  /*background : url("/src/assets/saxo.png")no-repeat;*/
   width:1800px;
   height:1900px;
   transform: scale(0.16);
