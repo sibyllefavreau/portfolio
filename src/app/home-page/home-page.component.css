@@ -1,0 +1,240 @@
+#imagePrincipale{
+  padding-top:60px;
+  background: url(/assets/accueil.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+  height: 600px;
+}
+h1{
+  text-align: center;
+  color: white;
+  font-size: 6em;
+  margin-top: 100px;
+  text-shadow: 1px 1px 2px black;
+  font-family: 'Inika', sans-serif;
+}
+#nomSib{
+  margin-top:-70px;
+}
+#traitImagePrincipale {
+  height: 3px;
+  width: 25%;
+  margin: -20px auto;
+  background-color: white;
+  box-shadow: 1px 1px 1px black;
+}
+.presentation{
+  padding: 50px 0px 10px 0px;
+  background: linear-gradient(#FEFFD7,#FFC2C2);
+  text-decoration-color: black;
+  color: black;
+  margin-bottom:0px;
+}
+.monParcours{
+  display: flex;
+  width:100%;
+  height:350px;
+  justify-content: flex-end;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+.caseParcours{
+  position:relative;
+  height:100%;
+  width:60%;
+  margin-right: 60px;
+  background-color: rgba(78,3,3,0.18);
+  border-radius: 30px;
+  box-shadow: 4px 8px 11px 0px rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor:pointer;
+}
+
+.caseParcours, .caseProjets {
+  border: 2px dashed transparent;
+  transform: scale(1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.caseParcours:hover, .caseProjets:hover {
+  border-color: black;
+  background-color: rgba(78,3,3,0.30);
+  transform: scale(1.05);
+}
+
+#svgParcours {
+  width: 100%;
+  height: 100%;
+}
+#engre{
+  margin-right: 375px;
+}
+#chapeau{
+  background : url(/assets/bac.png)no-repeat;
+  position:absolute;
+  left:0;
+  top:32%;
+  margin-left: 600px;
+  /*border: 3px solid red;*/
+  height:130px;
+  width:180px;
+  transform: translateY(-50%) scale(1);
+}
+#livre{
+  background : url(/assets/livre.png)no-repeat;
+  position:absolute;
+  left:0;
+  top:75%;
+  margin-left: 365px;
+  /*border: 3px solid red;*/
+  height:500px;
+  width:650px;
+  transform: translateY(-50%) scale(0.25);
+}
+
+.mesProjets{
+  display: flex;
+  width:100%;
+  height:350px;
+  justify-content: flex-start;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+.caseProjets{
+  position:relative;
+  height:100%;
+  width:60%;
+  margin-left: 60px;
+  background-color: rgba(78,3,3,0.18);
+  border-radius: 30px;
+  box-shadow: 4px 8px 11px 0px rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor:pointer;
+}
+#code{
+  margin-left: 10px;
+  margin-top: 20px;
+  width:450px;
+  height:250px;
+  /*overflow: hidden;*/
+  background-color: black;
+  color:springgreen;
+  border: 3px solid green;
+  border-radius: 10px;
+}
+.indemt{
+  display: inline-block;
+  text-indent: 2em;
+}
+
+.animation-tape {
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Inika', sans-serif;
+  font-size: 0.8em;
+}
+.animation-tape:nth-child(1){
+  animation: tape1 8s steps(10000) infinite;
+}
+.animation-tape:nth-child(2){
+  margin-top:-0.5em;
+  animation: tape2 8s steps(10000) infinite;
+}
+.animation-tape:nth-child(3){
+  margin-top:-0.5em;
+  animation: tape3 8s steps(10000) infinite;
+}
+.animation-tape:nth-child(4){
+  margin-top:-0.5em;
+  animation: tape4 8s steps(10000) infinite;
+}
+.animation-tape:nth-child(5){
+  margin-top:-0.5em;
+  animation: tape5 8s steps(10000) infinite;
+}
+.animation-tape:nth-child(6){
+  margin-top:-0.5em;
+  animation: tape6 8s steps(10000) infinite;
+}
+
+@keyframes tape1 {
+  0% { width: 0%;border-right: transparent }
+  5% { width: 0%; border-right: 1px solid white}
+  20% { width: 100%; }
+  30%{border-right: transparent}
+}
+
+@keyframes tape2 {
+  0% { width: 0%;border-right: transparent }
+  15%{border-right: transparent}
+  20% { width: 0%; border-right: 1px solid white}
+  35% { width: 100%; }
+  45%{border-right: transparent}
+}
+@keyframes tape3 {
+  0% { width: 0%; border-right: transparent }
+  34%{border-right: transparent}
+  35% { width: 0%; border-right: 1px solid white}
+  50% { width: 100%; }
+  60%{border-right: transparent}
+}
+@keyframes tape4 {
+  0% { width: 0%; border-right: transparent }
+  49%{border-right: transparent}
+  50% { width: 0%; border-right: 1px solid white}
+  65% { width: 100%; }
+  75%{border-right: transparent}
+}
+@keyframes tape5 {
+  0% { width: 0%; border-right: transparent }
+  64%{border-right: transparent}
+  65% { width: 0%; border-right: 1px solid white}
+  80% { width: 100%; }
+  90%{border-right: transparent}
+}
+@keyframes tape6 {
+  0% { width: 0%; border-right: transparent }
+  79%{border-right: transparent}
+  80% { width: 0%; border-right: 1px solid white}
+  95% { width: 100%; }
+}
+#caseLoisir{
+  position:relative;
+}
+#tennis{
+  transform: scale(0.6);
+  margin-top: 175px;
+  margin-left: -60px;
+}
+#ecrire{
+  position: absolute;
+  background : url(/assets/ecrire.png)no-repeat;
+  width:900px;
+  height:700px;
+  transform: scale(0.22);
+  left:-300px;
+  top:-260px;
+}
+#palette{
+  position: absolute;
+  background : url(/assets/palettePeintre.png)no-repeat;
+  width:500px;
+  height:450px;
+  transform: scale(0.4);
+  left:160px;
+  top:-130px;
+}
+#saxo{
+  position: absolute;
+  background : url(/assets/saxo.png)no-repeat;
+  width:1800px;
+  height:1900px;
+  transform: scale(0.16);
+  left:-250px;
+}
+
+

@@ -1,0 +1,34 @@
+#header{
+  padding: 18px 16px;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+#titre{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  text-align: center;
+  font-family: 'Inika', sans-serif;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+#traitGauche{
+  margin-right: 50px;
+  height: 2px;
+  width: 15%;
+  align-content: center;
+  background-color: black;
+  box-shadow: 1px 1px 1px black;
+}
+#traitDroit{
+  margin-top:3px;
+  margin-left:50px;
+  height: 2px;
+  width: 15%;
+  align-content: center;
+  background-color: black;
+  box-shadow: 1px 1px 1px black;
+}

@@ -1,0 +1,40 @@
+#case{
+  height:300px;
+  width:70%;
+  background-color: #9B97CB;
+  border: 2px solid black;
+  border-radius: 30px;
+  float: left;
+  margin-left: 20px;
+  display:flex;
+  margin-top:20px;
+}
+#titre, #decrire{
+  font-family: 'Inika', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+#case img{
+  position: relative;
+  transform: scale(0.95)  ;
+  border: 1px solid black;
+  margin-right: 30px;
+  border-top: 2px solid black;
+}
+#titre{
+  font-size: 1.8em;
+}
+#symbole{
+  text-align: center;
+}
+#decrire{
+  margin-top: -15px;
+}
+
+.fa-terminal{
+  border: 3px solid black;
+    padding:5px;
+    margin-right:20px;
+}
+

@@ -1,0 +1,11 @@
+<section id="case">
+  <img src="{{imageUrl}}" >
+  <div id="presentation">
+    <h2 id="titre">{{title}}</h2>
+    <p id="decrire">{{description}}</p>
+    <div id="symbole">
+      <div class="{{symbol[1]}}"></div>
+      <div *ngIf="symbol[0]=='2'" class="{{symbol[2]}}"></div>
+    </div>
+  </div>
+</section>

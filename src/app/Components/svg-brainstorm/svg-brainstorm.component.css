@@ -1,0 +1,237 @@
+svg{
+  margin-left: -30px;
+  transform: scale(0.8);
+}
+#ellipse1, #ellipse2, #ellipse3, #ellipse4, #ellipse5, #ellipse6, #ellipse7, #ellipse8, #ellipse9{
+  fill: transparent;
+  stroke:transparent;
+}
+#trait1, #trait2, #trait3, #trait4, #trait5, #trait6, #trait7, #trait8, #trait9{
+  stroke:transparent;
+}
+#trait1, #ellipse1 {
+  animation: apparaitre1 8s 1s infinite;
+}
+#trait2, #ellipse2 {
+  animation: apparaitre2 8s 1s infinite;
+}
+#trait3, #ellipse3 {
+  animation: apparaitre3 8s 1s infinite;
+}
+#trait4, #ellipse4 {
+  animation: apparaitre4 8s 1s infinite;
+}
+#trait5, #ellipse5 {
+  animation: apparaitre5 8s 1s infinite;
+}
+#trait6, #ellipse6 {
+  animation: apparaitre6 8s 1s infinite;
+}
+#trait7, #ellipse7 {
+  animation: apparaitre7 8s 1s infinite;
+}
+#trait8, #ellipse8 {
+  animation: apparaitre9 8s 1s infinite;
+}
+#trait9, #ellipse9 {
+  animation: apparaitre8 8s 1s infinite;
+}
+
+@keyframes apparaitre1 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  3%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  4%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+@keyframes apparaitre2 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  12%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  13%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+@keyframes apparaitre3 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  23%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  24%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+@keyframes apparaitre4 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  34%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  35%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+@keyframes apparaitre5 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  45%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  46%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+@keyframes apparaitre6 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  55%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  56%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+@keyframes apparaitre7 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  65%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  66%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+@keyframes apparaitre8 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  75%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  76%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+@keyframes apparaitre9 {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  85%{
+    fill: transparent;
+    stroke: transparent;
+  }
+  86%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  98%{
+    fill: rgba(128,4,4,0.4);
+    stroke: black;
+  }
+  99%{
+    fill: transparent;
+    stroke: transparent;
+  }
+}

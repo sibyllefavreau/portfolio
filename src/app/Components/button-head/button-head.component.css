@@ -1,0 +1,62 @@
+
+
+.styleButtonHeader{
+  background-color: #71BBFF;
+  margin: 0px;
+  padding:18px 16px;
+  border-right: 2px solid black;
+  font-size: 1.2em;
+
+}
+.styleButtonHeader:hover{
+  text-decoration: underline;
+}
+
+.styleButtonHeaderActive {
+  background-color: #08549A;
+  color: white;
+  margin: 0px;
+  padding:18px 16px;
+  border-right: 2px solid black;
+  font-size: 1.2em;
+}
+.buttonHomepageGauche{
+  cursor: pointer;
+  position:relative;
+  background-color: #7A9FFF;
+  color: black;
+  border-radius: 20px;
+  margin: 30px -50px 0 0px;
+  padding: 10% 15px ;
+  text-align: center;
+  font-size: 2em;
+  box-shadow: 4px 8px 11px 0px rgba(0,0,0,0.35);
+  z-index: 5;
+}
+.buttonHomepageDroite{
+  cursor: pointer;
+  position:relative;
+  background-color: #7A9FFF;
+  color: black;
+  border-radius: 20px;
+  margin: 30px 0px 0 -50px;
+  padding: 5% 15px ;
+  text-align: center;
+  font-size: 2em;
+  box-shadow: 4px 8px 11px 0px rgba(0,0,0,0.35);
+  z-index: 5;
+}
+.buttonHomepageDroite:hover, .buttonHomepageGauche:hover{
+  background-color: #062677;
+  color: white;
+  transform: scale(1.15);
+  transition: transform 0.4s ease-in-out;
+}
+.langue{
+  cursor: pointer;
+  background-color: white;
+  margin: 0px;
+  padding:18px 16px;
+  border-right: 2px solid black;
+  font-size: 1.2em;
+}

@@ -1,0 +1,40 @@
+#engrenage1{
+  position:absolute;
+  left:0;
+  top:50%;
+  margin-left: 280px;
+  background: url(/assets/engrenage1.png)no-repeat;
+  height:290px;
+  width:305px;
+  transform: translateY(-50%)  scale(0.6);
+  animation: tourner 4s linear infinite;
+  }
+
+@keyframes tourner{
+  0% {
+    transform: translateY(-50%)  scale(0.6) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%)  scale(0.6) rotate(360deg);
+  }
+}
+#engrenage2{
+  background : url(/assets/engrenage2.png)no-repeat;
+  position:absolute;
+  left:0;
+  top:27%;
+  margin-left: 425px;
+  height:175px;
+  width:180px;
+  transform: translateY(-50%)  scale(0.6);
+  animation: tourner2 3s linear infinite;
+  z-index:1;
+}
+@keyframes tourner2{
+  0% {
+    transform: translateY(-50%)  scale(0.6) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%)  scale(0.6) rotate(-360deg);
+  }
+}

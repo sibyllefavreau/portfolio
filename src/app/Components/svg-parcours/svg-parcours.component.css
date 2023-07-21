@@ -1,0 +1,109 @@
+svg{
+  position: absolute;
+  top: 50%;
+  left:-125px;
+  transform: translateY(-50%) scale(0.6);
+}
+#svg_30 {
+  animation: changeColor1 6s 1s infinite;
+}
+
+#svg_40 {
+  animation: changeColor2 6s 1s infinite;
+}
+#svg_39 {
+  animation: changeColor3 6s 1s infinite;
+}
+#svg_41 {
+  animation: changeColor4 6s 1s infinite;
+}
+#svg_42 {
+  animation: changeColor5 6s 1s infinite;
+}
+
+@keyframes changeColor1 {
+  0% {
+    fill: #e8cb82;
+  }
+  5% {
+    fill: #e8cb82;
+  }
+  6% {
+    fill: rgb(232,130,130);
+  }
+  90%{
+    fill:rgb(232,130,130);
+  }
+  91% {
+    fill: #e8cb82; /* Couleur initiale */
+  }
+}
+
+@keyframes changeColor2 {
+  0% {
+    fill: #e8cb82;
+  }
+  25% {
+    fill: #e8cb82;
+  }
+  26% {
+    fill: rgb(232, 130, 130);
+  }
+  90% {
+    fill: rgb(232, 130, 130);
+  }
+  91% {
+    fill: #e8cb82; /* Couleur initiale */
+  }
+}
+@keyframes changeColor3 {
+  0% {
+    fill: #e8cb82;
+  }
+  40% {
+    fill: #e8cb82;
+  }
+  41% {
+    fill: rgb(232, 130, 130);
+  }
+  90% {
+    fill: rgb(232, 130, 130);
+  }
+  91% {
+    fill: #e8cb82; /* Couleur initiale */
+  }
+}
+@keyframes changeColor4 {
+  0% {
+    fill: #e8cb82;
+  }
+  55% {
+    fill: #e8cb82;
+  }
+  56% {
+    fill: rgb(232, 130, 130);
+  }
+  90% {
+    fill: rgb(232, 130, 130);
+  }
+  91% {
+    fill: #e8cb82; /* Couleur initiale */
+  }
+}
+@keyframes changeColor5 {
+  0% {
+    fill: #e8cb82;
+  }
+  70% {
+    fill: #e8cb82;
+  }
+  71% {
+    fill: rgb(232,130,130);
+  }
+  90%{
+    fill:rgb(232,130,130);
+  }
+  91% {
+    fill: #e8cb82; /* Couleur initiale */
+  }
+}

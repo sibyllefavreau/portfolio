@@ -1,0 +1,16 @@
+nav{
+  overflow: hidden;
+  background-color: #71BBFF;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+  border: 2px solid black;
+  display: flex;
+  z-index: 10;
+}
+.button{
+  cursor:pointer;
+}
+
+
+
