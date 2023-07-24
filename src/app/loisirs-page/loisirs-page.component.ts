@@ -9,7 +9,9 @@ import {ChangerPageService} from "../changer-page.service";
   styleUrls: ['./loisirs-page.component.css']
 })
 export class LoisirsPageComponent {
-  constructor(param: VariablesGlobales, public route: Router, service: ChangerPageService) {
+  titrePage=['Mes loisirs', 'My hobbies'];
+
+  constructor(public param: VariablesGlobales, public route: Router, service: ChangerPageService) {
     param.chemin = this.route.url;
     if (param.chemin == '/loisirs') {
       service.styleBoutonsHeader = ["styleButtonHeader", "styleButtonHeader", "styleButtonHeader", "styleButtonHeaderActive", "styleButtonHeader"];

@@ -10,6 +10,12 @@ nav{
 }
 .button{
   cursor:pointer;
+  float:left;
+}
+
+#language{
+  position:absolute;
+  right:15px;
 }
 
 

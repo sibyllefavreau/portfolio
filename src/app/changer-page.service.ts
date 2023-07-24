@@ -8,7 +8,7 @@ import{VariablesGlobales} from "./variablesGlobales";
 export class ChangerPageService{
 
   styleBoutonsHeader=["styleButtonHeader","styleButtonHeader","styleButtonHeader","styleButtonHeader","styleButtonHeader"];
-
+  styleBoutonsLangue=["langueFr", "langueEn"];
 
 
 

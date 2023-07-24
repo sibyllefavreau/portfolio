@@ -23,8 +23,16 @@ export class HeaderComponent{
         if(this.stockageLangue==null){
           this.stockageLangue='0';
           this.intLangue=+this.stockageLangue;
+          service.styleBoutonsLangue=["langueFrActive", "langueEn"];
+          param.langue=this.intLangue;
         }else{
           this.intLangue=+this.stockageLangue;
+          param.langue=this.intLangue;
+          if(this.intLangue==0){
+            service.styleBoutonsLangue=["langueFrActive", "langueEn"];
+          } else{
+            service.styleBoutonsLangue=["langueFr", "langueEnActive"];
+          }
         }
   }
 
@@ -33,12 +41,14 @@ export class HeaderComponent{
     this.saveDataFr();
     this.stockageLangue='0';
     this.intLangue=+this.stockageLangue;
+    this.service.styleBoutonsLangue=["langueFrActive", "langueEn"];
   }
   changerLangueEn(){
     this.param.langue=1;
     this.saveDateEn();
     this.stockageLangue='1';
     this.intLangue=+this.stockageLangue;
+    this.service.styleBoutonsLangue=["langueFr", "langueEnActive"];
   }
   saveDataFr(){
     sessionStorage.setItem('langue','0');

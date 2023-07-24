@@ -7,7 +7,7 @@
   <div class="monParcours" (click)="clickCursus()"  routerLink="cursus" >
 
     <app-button-head (click)="clickCursus()" class="button" routerLink="cursus" [styleClass]="'buttonHomepageGauche'"
-                     [texteBouton]="'Mon parcours'"></app-button-head>
+                     [texteBouton]="this.texteBouton[0][param.langue]"></app-button-head>
     <div class="caseParcours">
       <div id="svgParcours">
         <app-svg-parcours ></app-svg-parcours>
@@ -31,11 +31,11 @@
   </div>
     <app-button-head (click)="clickProjet()" class="button"
                      routerLink="projets" [styleClass]="'buttonHomepageDroite'" [texteBouton]="
-                     'Mes projets mécaniques\net informatiques'" style="white-space: pre-line;"></app-button-head>
+                    this.texteBouton[1][param.langue]" style="white-space: pre-line;"></app-button-head>
   </div>
   <div class="monParcours">
     <app-button-head (click)="clickLoisirs()" class="button" routerLink="loisirs" [styleClass]="'buttonHomepageGauche'"
-                     [texteBouton]="'Mes loisirs'"></app-button-head>
+                     [texteBouton]="this.texteBouton[2][param.langue]"></app-button-head>
     <div class="caseParcours" (click)="clickLoisirs()" id="caseLoisir" routerLink="loisirs">
       <app-tennis id="tennis"></app-tennis>
       <img id="ecrire" src="assets/ecrire.png">
