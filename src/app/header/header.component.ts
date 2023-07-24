@@ -1,4 +1,4 @@
-import {Component, HostListener, Input} from '@angular/core';
+import {Component} from '@angular/core';
 import {ChangerPageService} from "../changer-page.service";
 import {VariablesGlobales} from "../variablesGlobales";
 
@@ -7,7 +7,7 @@ import {VariablesGlobales} from "../variablesGlobales";
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent{
+export class HeaderComponent {
   texte=[
     ['Accueil', 'Home'],
     ['Cursus', 'Curriculum'],
@@ -61,17 +61,76 @@ export class HeaderComponent{
   }
 
   onClick1(){
-    this.service.clickAccueil();
-      }
+    if (this.param.chemin!='/'){
+      this.service.clickAccueil();
+      this.onTopDirect();
+    }else{
+      this.onTheTop();
+    }
+  }
   onClick2(){
-    this.service.clickCursus();
+    if(this.param.chemin!='/cursus'){
+      this.service.clickCursus();
+      this.onTopDirect();
+    }else{
+      this.onTheTop();
+    }
   }
   onClick3(){
-    this.service.clickProjets();
+    if(this.param.chemin!='/projets'){
+      this.service.clickProjets();
+      this.onTopDirect();
+    } else{
+      this.onTheTop();
+    }
+
   }
   onClick4(){
-    this.service.clickLoisirs();
+    if(this.param.chemin!='/loisirs'){
+      this.service.clickLoisirs();
+      this.onTopDirect();
+    }else {
+      this.onTheTop();
+    }
   }
+  clickContact(){
+    this.onBottom();
+  }
+
+  onTheTop(){
+    let scrollToTop = window.setInterval(() => {
+      let pos = window.pageYOffset;
+      if (pos > 0) {
+        window.scrollTo(0, pos - 100); // how far to scroll on each step
+      }
+      else {
+        window.clearInterval(scrollToTop);
+      }
+    }, 16);
+  }
+  onTopDirect(){
+    let scrollToTop = window.setInterval(() => {
+      let pos = window.pageYOffset;
+      if (pos > 0) {
+        window.scrollTo(0,  0); // how far to scroll on each step
+      }
+      else {
+        window.clearInterval(scrollToTop);
+      }
+    }, 16);
+}
+  onBottom(){
+      const footerElement = document.getElementById('footer');
+      if (footerElement) {
+        const footerPosition = footerElement.getBoundingClientRect().top;
+        const scrollToPosition = window.pageYOffset + footerPosition;
+
+        window.scrollTo({
+          top: scrollToPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
 }
 
 
