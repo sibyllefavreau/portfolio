@@ -1,10 +1,10 @@
 
  <section id="projets">
-   <app-titre-page [texteTitre]="'Mes projets mécaniques et informatiques'"></app-titre-page>
-   <app-projet-droit [title]="titleProjets[0]" [description]="descripProjets[0]" [imageUrl]="imageProjets[0]" [symbol]="symboleProjets[0]"></app-projet-droit>
-   <app-projet-gauche [title]="titleProjets[1]" [description]="descripProjets[1]" [imageUrl]="imageProjets[1]" [symbol]="symboleProjets[1]"></app-projet-gauche>
-   <app-projet-droit [title]="titleProjets[2]" [description]="descripProjets[2]" [imageUrl]="imageProjets[2]" [symbol]="symboleProjets[2]"></app-projet-droit>
-   <app-projet-gauche [title]="titleProjets[3]" [description]="descripProjets[3]" [imageUrl]="imageProjets[3]" [symbol]="symboleProjets[3]"></app-projet-gauche>
-   <app-projet-droit [title]="titleProjets[4]" [description]="descripProjets[4]" [imageUrl]="imageProjets[4]" [symbol]="symboleProjets[4]"></app-projet-droit>
-   <app-projet-gauche [title]="titleProjets[5]" [description]="descripProjets[5]" [imageUrl]="imageProjets[5]" [symbol]="symboleProjets[5]"></app-projet-gauche>
+   <app-titre-page [texteTitre]="titrePage[param.langue]"></app-titre-page>
+   <app-projet-droit [title]="titleProjets[0][param.langue]" [description]="descripProjets[0][param.langue]" [imageUrl]="imageProjets[0]" [symbol]="symboleProjets[0]"></app-projet-droit>
+   <app-projet-gauche [title]="titleProjets[1][param.langue]" [description]="descripProjets[1][param.langue]" [imageUrl]="imageProjets[1]" [symbol]="symboleProjets[1]"></app-projet-gauche>
+   <app-projet-droit [title]="titleProjets[2][param.langue]" [description]="descripProjets[2][param.langue]" [imageUrl]="imageProjets[2]" [symbol]="symboleProjets[2]"></app-projet-droit>
+   <app-projet-gauche [title]="titleProjets[3][param.langue]" [description]="descripProjets[3][param.langue]" [imageUrl]="imageProjets[3]" [symbol]="symboleProjets[3]"></app-projet-gauche>
+   <app-projet-droit [title]="titleProjets[4][param.langue]" [description]="descripProjets[4][param.langue]" [imageUrl]="imageProjets[4]" [symbol]="symboleProjets[4]"></app-projet-droit>
+   <app-projet-gauche [title]="titleProjets[5][param.langue]" [description]="descripProjets[5][param.langue]" [imageUrl]="imageProjets[5]" [symbol]="symboleProjets[5]"></app-projet-gauche>
  </section>

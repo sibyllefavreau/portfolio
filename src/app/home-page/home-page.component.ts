@@ -9,8 +9,13 @@ import {Router} from "@angular/router";
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent {
+  texteBouton=[
+    ["Mon parcours", "My career"],
+  ["Mes projets mécaniques\net informatiques","My mechanical and\ncomputer projects"],
+    ["Mes loisirs", "My hobbies"]
+  ];
 
-  constructor(param: VariablesGlobales, public route: Router, public service: ChangerPageService) {
+  constructor(public param: VariablesGlobales, public route: Router, public service: ChangerPageService) {
     param.chemin = this.route.url;
     if (param.chemin == '/') {
       service.styleBoutonsHeader = ["styleButtonHeaderActive", "styleButtonHeader", "styleButtonHeader", "styleButtonHeader", "styleButtonHeader"];
