@@ -1,1 +1,15 @@
-<app-titre-page [texteTitre]="titrePage[param.langue]"></app-titre-page>
+<div id="pageCursus">
+  <app-titre-page [texteTitre]="titrePage[param.langue]"></app-titre-page>
+  <div id="cursus">
+    <img id="route" src="assets/route.svg">
+    <img id="paris" src="assets/Paris.png">
+    <app-panneau-date id="naissance" [date]="'19/01/2002'"></app-panneau-date>
+    <img id="nantes" src="assets/Nantes.png">
+    <app-panneau-date id="panneauNantes" [date]="'10/2002'"></app-panneau-date>
+    <img id="lyon" src="assets/Lyon.png">
+    <app-panneau-date id="panneauLyon" [date]="'09/2019'"></app-panneau-date>
+    <img id="stockholm" src="assets/Stockholm.png">
+    <app-panneau-date id="panneauStockholm" [date]="'08/2023'"></app-panneau-date>
+  </div>
+</div>
+

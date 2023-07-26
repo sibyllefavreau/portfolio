@@ -1,10 +1,10 @@
 <nav>
   <div id="boutonsHeader">
-    <app-button-head class="button" routerLink=""(click)="onClick1()" [styleClass]="service.styleBoutonsHeader[0]" [texteBouton]="texte[0][intLangue]"></app-button-head>
+    <app-button-head class="button" routerLink="" (click)="onClick1()" [styleClass]="service.styleBoutonsHeader[0]" [texteBouton]="texte[0][intLangue]"></app-button-head>
     <app-button-head class="button" routerLink="cursus" (click)="onClick2()" [styleClass]="service.styleBoutonsHeader[1]" [texteBouton]="texte[1][intLangue]"></app-button-head>
     <app-button-head class="button" routerLink="projets"(click)="onClick3()" [styleClass]="service.styleBoutonsHeader[2]" [texteBouton]="texte[2][intLangue]"></app-button-head>
     <app-button-head class="button" routerLink="loisirs" (click)="onClick4()" [styleClass]="service.styleBoutonsHeader[3]" [texteBouton]="texte[3][intLangue]"></app-button-head>
-    <app-button-head class="button" routerLink="#contact" [styleClass]="service.styleBoutonsHeader[4]" [texteBouton]="'Contact'"><a href="#contact"></a></app-button-head>
+    <app-button-head  class="button" routerLink="#contact"  (click)="clickContact()"[styleClass]="service.styleBoutonsHeader[4]" [texteBouton]="'Contact'"><a href="#contact"></a></app-button-head>
   </div>
   <div id="language">
       <app-button-head  (click)="changerLangueFr()" [styleClass]="service.styleBoutonsLangue[0]" [texteBouton]="''"></app-button-head>

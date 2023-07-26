@@ -1,1 +1,9 @@
 <app-titre-page [texteTitre]="titrePage[param.langue]"></app-titre-page>
+
+<div id="listePassion">
+  <app-loisir routerLink="musique" [passion]="titreLoisirs[0][param.langue]" [image]="'assets/saxophone.png'"></app-loisir>
+  <app-loisir routerLink="peinture" [passion]="titreLoisirs[1][param.langue]" [image]="'assets/art.jpg'"></app-loisir>
+  <app-loisir routerLink="patisserie" [passion]="titreLoisirs[2][param.langue]" [image]="'assets/dessert.jpg'"></app-loisir>
+  <app-loisir routerLink="sport" [passion]="titreLoisirs[3][param.langue]" [image]="'assets/sport.png'"></app-loisir>
+  <app-loisir routerLink="ecriture" [passion]="titreLoisirs[4][param.langue]" [image]="'assets/ecriture.jpg'"></app-loisir>
+</div>
