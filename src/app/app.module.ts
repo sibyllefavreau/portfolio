@@ -21,6 +21,12 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjetDroitComponent } from './Components/projet-droit/projet-droit.component';
 import { ProjetGaucheComponent } from './Components/projet-gauche/projet-gauche.component';
 import {VariablesGlobales} from "./variablesGlobales";
+import { LoisirComponent } from './Components/loisir/loisir.component';
+import { MusiquePageComponent } from './musique-page/musique-page.component';
+import { PeinturePageComponent } from './peinture-page/peinture-page.component';
+import { PatisseriePageComponent } from './patisserie-page/patisserie-page.component';
+import { SportPageComponent } from './sport-page/sport-page.component';
+import { EcriturePageComponent } from './ecriture-page/ecriture-page.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +45,12 @@ import {VariablesGlobales} from "./variablesGlobales";
     FooterComponent,
     ProjetDroitComponent,
     ProjetGaucheComponent,
+    LoisirComponent,
+    MusiquePageComponent,
+    PeinturePageComponent,
+    PatisseriePageComponent,
+    SportPageComponent,
+    EcriturePageComponent,
 
   ],
   imports: [
@@ -47,6 +59,11 @@ import {VariablesGlobales} from "./variablesGlobales";
       {path: 'cursus', component: CursusPageComponent},
       {path: 'projets', component: ProjetsPageComponent},
       {path: 'loisirs', component: LoisirsPageComponent},
+      {path: 'loisirs/patisserie', component:PatisseriePageComponent},
+      {path: 'loisirs/musique', component:MusiquePageComponent},
+      {path: 'loisirs/peinture', component:PeinturePageComponent},
+      {path: 'loisirs/sport', component:SportPageComponent},
+      {path: 'loisirs/ecriture', component:EcriturePageComponent}
     ]),
   ],
   providers: [VariablesGlobales],

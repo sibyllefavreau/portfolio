@@ -4,20 +4,11 @@ import {Router} from "@angular/router";
 import {ChangerPageService} from "../changer-page.service";
 
 @Component({
-  selector: 'app-loisirs-page',
-  templateUrl: './loisirs-page.component.html',
-  styleUrls: ['./loisirs-page.component.css']
+  selector: 'app-musique-page',
+  templateUrl: './musique-page.component.html',
+  styleUrls: ['./musique-page.component.css']
 })
-export class LoisirsPageComponent {
-  titrePage=['Mes loisirs', 'My hobbies'];
-  titreLoisirs=[
-    ['Musique', 'Music'],
-    ['Peinture', 'Painting'],
-    ['Pâtisserie', 'Baking'],
-    ['Sport', 'Sport'],
-    ['Ecriture', 'Writing']
-  ];
-
+export class MusiquePageComponent {
   constructor(public param: VariablesGlobales, public route: Router, service: ChangerPageService) {
     param.chemin = this.route.url;
     if (param.chemin.startsWith('/loisirs')) {

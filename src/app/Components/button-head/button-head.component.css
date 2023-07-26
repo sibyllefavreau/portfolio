@@ -6,6 +6,7 @@
   padding:18px 16px;
   border-right: 2px solid black;
   font-size: 1.2em;
+  box-shadow: inset 0px 8px 12px 5px rgba(0,0,0,0.16);
 
 }
 .styleButtonHeader:hover{
@@ -19,6 +20,7 @@
   padding:18px 16px;
   border-right: 2px solid black;
   font-size: 1.2em;
+  box-shadow: inset 0px 8px 12px 5px rgba(0,0,0,0.16);
 }
 .buttonHomepageGauche{
   cursor: pointer;
