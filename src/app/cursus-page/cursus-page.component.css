@@ -1,9 +1,68 @@
+#pageCursus{
+  background: linear-gradient(rgba(254,255,215,0.25),rgba(128,4,4,0.1));
+}
 #cursus{
-  height:1100px;
+  margin-top: 50px;
+  height:1350px;
   text-align: center;
+  position: relative;
+  display: flex;
 }
 #route {
-  margin-top: -400px;
-  /*border:3px solid red;*/
+  margin-top: -300px;
+  position: absolute;
+  margin-left: 50px;
+  z-index: -1;
 }
+#paris{
+  transform: scale(0.09) rotate(-4deg);
+  position: absolute;
+  top:-890px;
+  left:-50px;
+}
+#nantes{
+  position: absolute;
+  transform: scale(0.8) rotate(-20deg);
+  top:28px;
+  left:120px;
+}
+#lyon{
+  position: absolute;
+  transform: rotate(42deg) scale(0.8);
+  left:575px;
+  top:350px;
+}
+#stockholm{
+  position: absolute;
+  transform:scale(0.3) rotate(-15deg);
+  left:-350px;
+  top:250px;
+}
+#naissance{
+  height: 50px;
+  position: absolute;
+  left:740px;
+  top:-38px;
+  transform: rotate(-6deg);
+}
+#panneauNantes{
+  position: absolute;
+  transform: rotate(-18deg);
+  top:95px;
+  left:285px;
+}
+#panneauLyon{
+  position: absolute;
+  transform: rotate(35deg);
+  left:800px;
+  top:385px;
+}
+#panneauStockholm{
+  position: absolute;
+  transform: rotate(-11deg);
+  top:610px;
+  left:325px;
+}
+
+
 

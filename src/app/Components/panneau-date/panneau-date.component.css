@@ -1,0 +1,21 @@
+#panneau{
+  border: 3px solid red;
+  border-radius: 10px;
+  width:175px;
+  height:50px;
+}
+#panneauDate{
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+#poteau{
+  width:5px;
+  height:125px;
+  background-color: black;
+}
+p{
+  font-family: 'Inika', sans-serif;
+  font-size: 2em;
+  margin-top: 0px;
+}
