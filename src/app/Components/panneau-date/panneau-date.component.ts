@@ -7,4 +7,6 @@ import {Component, Input} from '@angular/core';
 })
 export class PanneauDateComponent {
   @Input() date: string | undefined;
+  @Input() style: string | undefined;
+  @Input() image: string | undefined;
 }

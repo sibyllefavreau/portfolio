@@ -1,6 +1,7 @@
 <div id="panneauDate">
-  <div id="panneau">
+  <div id="{{style}}">
     <p>{{date}}</p>
+    <img *ngIf="style=='etape'||'etape2'" id='image' src="{{image}}">
   </div>
   <div id="poteau"></div>
 

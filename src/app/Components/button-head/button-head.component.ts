@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class ButtonHeadComponent {
   @Input() texteBouton: string | undefined;
   @Input() styleClass:string="styleDefault"
+  @Input() anglais: string | undefined;
 }
