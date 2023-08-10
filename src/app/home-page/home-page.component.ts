@@ -21,15 +21,5 @@ export class HomePageComponent {
       service.styleBoutonsHeader = ["styleButtonHeaderActive", "styleButtonHeader", "styleButtonHeader", "styleButtonHeader", "styleButtonHeader"];
     }
   }
-
-  clickProjet(){
-    this.service.clickProjets();
-  }
-  clickCursus(){
-    this.service.clickCursus();
-  }
-  clickLoisirs(){
-    this.service.clickLoisirs();
-  }
 }
 

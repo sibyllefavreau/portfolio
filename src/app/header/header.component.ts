@@ -62,7 +62,6 @@ export class HeaderComponent {
 
   onClick1(){
     if (this.param.chemin!='/'){
-      this.service.clickAccueil();
       this.onTopDirect();
     }else{
       this.onTheTop();
@@ -70,7 +69,6 @@ export class HeaderComponent {
   }
   onClick2(){
     if(this.param.chemin!='/cursus'){
-      this.service.clickCursus();
       this.onTopDirect();
     }else{
       this.onTheTop();
@@ -78,7 +76,6 @@ export class HeaderComponent {
   }
   onClick3(){
     if(this.param.chemin!='/projets'){
-      this.service.clickProjets();
       this.onTopDirect();
     } else{
       this.onTheTop();
@@ -87,7 +84,6 @@ export class HeaderComponent {
   }
   onClick4(){
     if(this.param.chemin!='/loisirs'){
-      this.service.clickLoisirs();
       this.onTopDirect();
     }else {
       this.onTheTop();

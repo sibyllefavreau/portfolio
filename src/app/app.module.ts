@@ -28,6 +28,7 @@ import { PatisseriePageComponent } from './patisserie-page/patisserie-page.compo
 import { SportPageComponent } from './sport-page/sport-page.component';
 import { EcriturePageComponent } from './ecriture-page/ecriture-page.component';
 import { PanneauDateComponent } from './Components/panneau-date/panneau-date.component';
+import { MenuLoisirsComponent } from './Components/menu-loisirs/menu-loisirs.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { PanneauDateComponent } from './Components/panneau-date/panneau-date.com
     SportPageComponent,
     EcriturePageComponent,
     PanneauDateComponent,
+    MenuLoisirsComponent,
 
   ],
   imports: [

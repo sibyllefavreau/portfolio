@@ -1,0 +1,9 @@
+<nav>
+  <div id="boutonsHeader">
+    <app-button-head class="button" routerLink="/loisirs/musique" (click)="onClick1()" [styleClass]="service.styleBoutonsLoisirs[0]" [texteBouton]="loisirs[0][param.langue]"></app-button-head>
+    <app-button-head class="button" routerLink="/loisirs/peinture" (click)="onClick2()" [styleClass]="service.styleBoutonsLoisirs[1]" [texteBouton]="loisirs[1][param.langue]"></app-button-head>
+    <app-button-head class="button" routerLink="/loisirs/patisserie"(click)="onClick3()" [styleClass]="service.styleBoutonsLoisirs[2]" [texteBouton]="loisirs[2][param.langue]"></app-button-head>
+    <app-button-head class="button" routerLink="/loisirs/sport" (click)="onClick4()" [styleClass]="service.styleBoutonsLoisirs[3]" [texteBouton]="loisirs[3][param.langue]"></app-button-head>
+    <app-button-head  class="button" routerLink="/loisirs/ecriture"  (click)="onClick5()"[styleClass]="service.styleBoutonsLoisirs[4]" [texteBouton]="loisirs[4][param.langue]"></app-button-head>
+  </div>
+</nav>

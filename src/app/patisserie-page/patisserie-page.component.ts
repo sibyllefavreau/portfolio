@@ -9,10 +9,15 @@ import {ChangerPageService} from "../changer-page.service";
   styleUrls: ['./patisserie-page.component.css']
 })
 export class PatisseriePageComponent {
+  titrePage=['Mes desserts','My desserts'];
+
   constructor(public param: VariablesGlobales, public route: Router, service: ChangerPageService) {
     param.chemin = this.route.url;
     if (param.chemin.startsWith('/loisirs')) {
       service.styleBoutonsHeader = ["styleButtonHeader", "styleButtonHeader", "styleButtonHeader", "styleButtonHeaderActive", "styleButtonHeader"];
+    }
+    if (param.chemin == '/loisirs/patisserie') {
+      service.styleBoutonsLoisirs = ["styleButtonHobbies", "styleButtonHobbies", "styleButtonHobbiesActive", "styleButtonHobbies", "styleButtonHobbies"];
     }
   }
 }
