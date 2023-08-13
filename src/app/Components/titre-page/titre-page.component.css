@@ -33,3 +33,14 @@ h1{
   background-color: black;
   box-shadow: 1px 1px 1px black;
 }
+.logo{
+  /*height:80px;*/
+  /*width:50px;*/
+  margin-top: -30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#blanc{
+  width:100%;
+  height:40px;
+}

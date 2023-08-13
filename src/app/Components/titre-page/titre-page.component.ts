@@ -7,4 +7,10 @@ import {Component, Input} from '@angular/core';
 })
 export class TitrePageComponent {
   @Input() texteTitre: string | undefined;
+  @Input() logo: string | undefined;
+  @Input() taille: number[] ;
+
+  constructor() {
+    this.taille=[50,50];
+  }
 }

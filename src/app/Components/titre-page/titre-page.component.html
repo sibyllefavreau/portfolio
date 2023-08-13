@@ -1,7 +1,10 @@
 <div id="header"></div>
+<div *ngIf="logo!=undefined" id="blanc"></div>
 <div id="titre">
   <div id="traitGauche"></div>
+  <img *ngIf="logo!=undefined" class="logo" src="{{logo}}" height="{{taille[0]}}" width="{{taille[1]}}">
   <h1> {{texteTitre}} </h1>
+  <img *ngIf="logo!=undefined" class="logo" src="{{logo}}" height="{{taille[0]}}" width="{{taille[1]}}">
   <div id="traitDroit"></div>
 </div>
 
