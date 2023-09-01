@@ -1,4 +1,23 @@
-<div id="presentation">
-  <app-menu-loisirs id="barMenu"></app-menu-loisirs>
-  <app-titre-page [logo]="'assets/gateauLogo.png'" [texteTitre]="titrePage[param.langue]" [taille]="[70,70]"></app-titre-page>
+<div id="page">
+  <div id="presentation">
+    <app-menu-loisirs id="barMenu"></app-menu-loisirs>
+    <app-titre-page [logo]="'assets/gateauLogo.png'" [texteTitre]="titrePage[param.langue]" [taille]="[70,70]"></app-titre-page>
+    <p id="paragraphe">{{paragraphe[param.langue]}}</p>
+  </div>
+  <div id="entremets">
+    <h2> {{titreSection[0][param.langue]}} </h2>
+    <div id="fleches">
+      <div class="fleche" (click)="derouleGauche()">
+        <div class="logo" class="fa-solid fa-chevron-left fa-2x"></div>
+      </div>
+      <p>{{param.nbEntremet}} / 4 </p>
+      <div class="fleche" (click)="derouleDroite()">
+        <div class="logo" class="fa-solid fa-chevron-right fa-2x"></div>
+      </div>
+    </div>
+
+    <app-case-entremet [titreGateau]="titreGateau[this.nombreEntremet][param.langue]" [description]="description[this.nombreEntremet][param.langue]" [photoGateau]="photoGateau[this.nombreEntremet]" [photoPartGateau]="photoPartGateau[this.nombreEntremet]" [schemaGateau]="schemaGateau[0]"></app-case-entremet>
+
+  </div>
 </div>
+

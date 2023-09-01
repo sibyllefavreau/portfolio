@@ -29,6 +29,7 @@ import { SportPageComponent } from './sport-page/sport-page.component';
 import { EcriturePageComponent } from './ecriture-page/ecriture-page.component';
 import { PanneauDateComponent } from './Components/panneau-date/panneau-date.component';
 import { MenuLoisirsComponent } from './Components/menu-loisirs/menu-loisirs.component';
+import { CaseEntremetComponent } from './Components/case-entremet/case-entremet.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { MenuLoisirsComponent } from './Components/menu-loisirs/menu-loisirs.com
     EcriturePageComponent,
     PanneauDateComponent,
     MenuLoisirsComponent,
+    CaseEntremetComponent,
 
   ],
   imports: [
