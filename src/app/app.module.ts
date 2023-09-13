@@ -30,6 +30,7 @@ import { EcriturePageComponent } from './ecriture-page/ecriture-page.component';
 import { PanneauDateComponent } from './Components/panneau-date/panneau-date.component';
 import { MenuLoisirsComponent } from './Components/menu-loisirs/menu-loisirs.component';
 import { CaseEntremetComponent } from './Components/case-entremet/case-entremet.component';
+import { CaseDefilementComponent } from './Components/case-defilement/case-defilement.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { CaseEntremetComponent } from './Components/case-entremet/case-entremet.
     PanneauDateComponent,
     MenuLoisirsComponent,
     CaseEntremetComponent,
+    CaseDefilementComponent,
 
   ],
   imports: [

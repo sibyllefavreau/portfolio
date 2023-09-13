@@ -4,7 +4,7 @@
     <app-titre-page [logo]="'assets/gateauLogo.png'" [texteTitre]="titrePage[param.langue]" [taille]="[70,70]"></app-titre-page>
     <p id="paragraphe">{{paragraphe[param.langue]}}</p>
   </div>
-  <div id="entremets">
+  <div class="entremets">
     <h2> {{titreSection[0][param.langue]}} </h2>
     <div id="fleches">
       <div class="fleche" (click)="derouleGauche()">
@@ -15,9 +15,11 @@
         <div class="logo" class="fa-solid fa-chevron-right fa-2x"></div>
       </div>
     </div>
-
-    <app-case-entremet [titreGateau]="titreGateau[this.nombreEntremet][param.langue]" [description]="description[this.nombreEntremet][param.langue]" [photoGateau]="photoGateau[this.nombreEntremet]" [photoPartGateau]="photoPartGateau[this.nombreEntremet]" [schemaGateau]="schemaGateau[0]"></app-case-entremet>
-
+    <app-case-entremet [titreGateau]="titreEntremet[this.nombreEntremet][param.langue]" [description]="description[this.nombreEntremet][param.langue]" [photoGateau]="photoEntremet[this.nombreEntremet]" [photoPartGateau]="photoPartEntremet[this.nombreEntremet]" [schemaGateau]="schemaEntremet[0]"></app-case-entremet>
   </div>
+  <div class="entremets">
+    <app-case-defilement [styleClass]="'gateaux'" [titreSection]="titreSection[1][param.langue]" [titreGateau]="titreGateau" [photos]="photoGateau"></app-case-defilement>
+  </div>
+
 </div>
 
