@@ -22,11 +22,11 @@ export class MusiquePageComponent {
     ["Concert à la Rotonde (salle de spectacle de l'INSA) en quatuor de saxophone (soprano pour ma part)","Concert at the Rotonde (INSA concert hall) with a saxophone quartet (soprano for me)"]
   ];
   images=[
-    ['/assets/noteMusique.png','/assets/saxophoneTransparent.png'],
-    ['/assets/cléSol.png', '/assets/cléUt.png'],
-    ['/assets/folleJournee.png','/assets/saxophoneTransparent.png'],
-    ['/assets/noteMusique.png','/assets/saxophoneTransparent.png'],
-    ['/assets/partition.png', '/assets/noteMusique.png'],
+    ['assets/noteMusique.png','assets/saxophoneTransparent.png'],
+    ['assets/cléSol.png', 'assets/cléUt.png'],
+    ['assets/folleJournee.png','assets/saxophoneTransparent.png'],
+    ['assets/noteMusique.png','assets/saxophoneTransparent.png'],
+    ['assets/partition.png', 'assets/noteMusique.png'],
     ['',''],
     ['','']
   ];
