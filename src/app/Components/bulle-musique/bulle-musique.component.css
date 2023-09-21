@@ -1,0 +1,32 @@
+#description{
+  display: inline-flex;
+}
+#bulle{
+  border:2px solid black;
+  border-radius: 110px;
+  width:225px;
+  text-align: center;
+  background-color: #D9D9D9;
+}
+h1, p{
+  font-family: 'Indie Flower', cursive;
+}
+h1{
+  margin-top: 0px;
+}
+#trait{
+  width:80px;
+  height:2px;
+  background-color: black;
+  position: relative;
+  margin:-30px auto 0px auto;
+}
+p {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+.imag{
+  margin-top: 15px;
+  margin-left: 4px;
+}
+

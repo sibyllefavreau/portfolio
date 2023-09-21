@@ -9,19 +9,6 @@ export class ChangerPageService{
 
   styleBoutonsHeader=["styleButtonHeader","styleButtonHeader","styleButtonHeader","styleButtonHeader","styleButtonHeader"];
   styleBoutonsLangue=["langueFr", "langueEn"];
+  styleBoutonsLoisirs=["styleButtonHobbies","styleButtonHobbies","styleButtonHobbies","styleButtonHobbies","styleButtonHobbies"];
 
-
-
-  clickProjets(){
-    this.styleBoutonsHeader=["styleButtonHeader","styleButtonHeader","styleButtonHeaderActive","styleButtonHeader","styleButtonHeader"];
-  }
-  clickAccueil(){
-    this.styleBoutonsHeader=["styleButtonHeaderActive","styleButtonHeader","styleButtonHeader","styleButtonHeader","styleButtonHeader"];
-  }
-  clickCursus(){
-    this.styleBoutonsHeader=["styleButtonHeader","styleButtonHeaderActive","styleButtonHeader","styleButtonHeader","styleButtonHeader"];
-  }
-  clickLoisirs(){
-    this.styleBoutonsHeader=["styleButtonHeader","styleButtonHeader","styleButtonHeader","styleButtonHeaderActive","styleButtonHeader"];
-  }
 }

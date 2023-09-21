@@ -1,15 +1,25 @@
 <div id="pageCursus">
-  <app-titre-page [texteTitre]="titrePage[param.langue]"></app-titre-page>
+  <app-titre-page id="titrePage" [texteTitre]="titrePage[param.langue]"></app-titre-page>
   <div id="cursus">
-    <img id="route" src="assets/route.svg">
-    <img id="paris" src="assets/Paris.png">
-    <app-panneau-date id="naissance" [date]="'19/01/2002'"></app-panneau-date>
-    <img id="nantes" src="assets/Nantes.png">
-    <app-panneau-date id="panneauNantes" [date]="'10/2002'"></app-panneau-date>
-    <img id="lyon" src="assets/Lyon.png">
-    <app-panneau-date id="panneauLyon" [date]="'09/2019'"></app-panneau-date>
-    <img id="stockholm" src="assets/Stockholm.png">
-    <app-panneau-date id="panneauStockholm" [date]="'08/2023'"></app-panneau-date>
+      <img id="route" src="assets/route.svg">
+      <img id="paris" src="assets/Paris.png">
+      <app-panneau-date id="naissance" [style]="'panneau'" [date]="'19/01/2002'"></app-panneau-date>
+      <img id="nantes" src="assets/Nantes.png">
+      <app-panneau-date id="panneauNantes" [style]="'panneau'" [date]="'10/2002'"></app-panneau-date>
+      <img id="lyon" src="assets/Lyon.png">
+      <app-panneau-date id="panneauLyon" [style]="'panneau'" [date]="'09/2019'"></app-panneau-date>
+      <img id="stockholm" src="assets/Stockholm.png">
+      <app-panneau-date id="panneauStockholm" [style]="'panneau'" [date]="'08/2023'"></app-panneau-date>
+
+      <app-panneau-date id="bac" [style]="'etape'" [date]="panneauEtape[0][param.langue]" [image]="'assets/bac.png'"></app-panneau-date>
+    <app-panneau-date id="gm" [style]="'etape2'" [date]="panneauEtape[1][param.langue]" [image]="'assets/gm.png'"></app-panneau-date>
+    <app-panneau-date id="ingenieur" [style]="'etape'" [date]="panneauEtape[2][param.langue]" ></app-panneau-date>
+    <div class="explication" id="caseNantes">{{explicationPanneau[0][param.langue]}}</div>
+    <div class="explication" id="caseBac">{{explicationPanneau[1][param.langue]}}</div>
+    <div class="explication" id="caseInsa">{{explicationPanneau[2][param.langue]}}</div>
+    <div class="explication" id="caseGm">{{explicationPanneau[3][param.langue]}}</div>
+    <div class="explication" id="caseErasmus">{{explicationPanneau[4][param.langue]}}</div>
+
   </div>
 </div>
 

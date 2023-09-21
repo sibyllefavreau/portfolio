@@ -1,0 +1,71 @@
+#paragraphe{
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0 70px;
+}
+
+#parcours{
+  text-align: center;
+  width:1250px;
+  margin: 0px auto 40px auto;
+}
+#parcours1, #parcours2, #parcours3, #parcours4, .sousParcours, #parcours5, #parcours6{
+  display: inline-flex;
+  align-items: center;
+}
+#parcours1{
+  margin-top: -90px;
+}
+#parcours2{
+  margin-right:135px;
+  margin-top: -100px;
+}
+#parcours3{
+  margin-left: -70px;
+  margin-top: -110px;
+}
+#parcours4{
+  margin-top: -100px;
+  margin-right: -23px;
+}
+#parcours5{
+  margin-top:-105px;
+  margin-left: 24px;
+}
+#parcours6{
+  margin-top: -70px;
+  margin-right: 108px;
+}
+.traitVerticalHaut{
+  width:4px;
+  height:100px;
+  background-color: black;
+  margin-top: -96px;
+}
+.traitVerticalBasGrand{
+  width:4px;
+  height:200px;
+  background-color: black;
+  margin-top: 196px;
+}
+.traitVerticalBas{
+  width:4px;
+  height:100px;
+  background-color: black;
+  margin-top: 96px;
+}
+.traitHorizontal{
+  height:4px;
+  width:200px;
+  background-color: black;
+}
+.traitHorizontalPetit{
+  height:4px;
+  width:75px;
+  background-color: black;
+}
+#fleche{
+  position: relative;
+  margin-right: -30px;
+}

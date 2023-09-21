@@ -1,13 +1,22 @@
 #pageCursus{
   background: linear-gradient(rgba(254,255,215,0.25),rgba(128,4,4,0.1));
+  display: inline-flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+}
+#titrePage{
+  width:100%;
 }
 #cursus{
   margin-top: 50px;
   height:1350px;
+  width:1200px;
   text-align: center;
   position: relative;
   display: flex;
 }
+
 #route {
   margin-top: -300px;
   position: absolute;
@@ -63,6 +72,57 @@
   top:610px;
   left:325px;
 }
+#bac{
+  position: absolute;
+  top:320px;
+  left:420px;
+}
+#gm{
+  position: absolute;
+  top:580px;
+  left:560px;
+}
+#ingenieur{
+  position: absolute;
+  top:900px;
+  left:100px;
+}
+.explication{
+  border: 3px dashed black;
+  position: absolute;
+  background-color: rgba(189,189,218,1);
+  border-radius: 20px;
+  font-family: 'Inika', sans-serif;
+  height:100px;
+  width:200px;
+  padding:15px 10px;
+  box-shadow: 4px 8px 11px 0px rgba(0,0,0,0.35);
+  align-items: center;
+  display:flex;
+}
+#caseNantes{
+  transform: rotate(-18deg);
+  left:205px;
+  top:-65px;
+}
+#caseBac{
+  left:150px;
+  top:340px;
+}
+#caseInsa{
+  left:885px;
+  top:275px;
+  transform: rotate(35deg);
+}
+#caseGm{
+  left:800px;
+  top:700px;
+}
+#caseErasmus{
+  top:600px;
+  transform: rotate(-10deg);
+}
+
 
 
 

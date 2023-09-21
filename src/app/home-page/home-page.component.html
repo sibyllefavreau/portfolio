@@ -5,9 +5,9 @@
   <div id="traitImagePrincipale"></div>
 </div>
 <section class="presentation">
-  <div class="monParcours" (click)="clickCursus()"  routerLink="cursus" >
+  <div class="monParcours"  routerLink="cursus" >
 
-    <app-button-head (click)="clickCursus()" class="button" routerLink="cursus" [styleClass]="'buttonHomepageGauche'"
+    <app-button-head  class="button" routerLink="cursus" [styleClass]="'buttonHomepageGauche'"
                      [texteBouton]="this.texteBouton[0][param.langue]"></app-button-head>
     <div class="caseParcours">
       <div id="svgParcours">
@@ -19,7 +19,7 @@
     </div>
 </div>
   <div class="mesProjets">
-  <div class="caseProjets" (click)="clickProjet()" routerLink="projets">
+  <div class="caseProjets"  routerLink="projets">
     <div id="code">
       <p class="texte-tape" class="animation-tape"> public void displayGamePrincipalState(Controller c) &#123;                     </p>
       <p class="texte-tape" class="animation-tape"><span class="indemt">logger.trace("start displayGamePrincipalState(Controller c)");</span></p>
@@ -30,14 +30,14 @@
     </div>
     <app-svg-brainstorm></app-svg-brainstorm>
   </div>
-    <app-button-head (click)="clickProjet()" class="button"
+    <app-button-head  class="button"
                      routerLink="projets" [styleClass]="'buttonHomepageDroite'" [texteBouton]="
                     this.texteBouton[1][param.langue]" style="white-space: pre-line;"></app-button-head>
   </div>
   <div class="monParcours">
-    <app-button-head (click)="clickLoisirs()" class="button" routerLink="loisirs" [styleClass]="'buttonHomepageGauche'"
+    <app-button-head  class="button" routerLink="loisirs" [styleClass]="'buttonHomepageGauche'"
                      [texteBouton]="this.texteBouton[2][param.langue]"></app-button-head>
-    <div class="caseParcours" (click)="clickLoisirs()" id="caseLoisir" routerLink="loisirs">
+    <div class="caseParcours"  id="caseLoisir" routerLink="loisirs">
       <app-tennis id="tennis"></app-tennis>
       <img id="ecrire" src="assets/ecrire.png">
       <img id="palette" src="assets/palettePeintre.png">

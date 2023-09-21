@@ -6,7 +6,7 @@
   padding:18px 16px;
   border-right: 2px solid black;
   font-size: 1.2em;
-  box-shadow: inset 0px 8px 12px 5px rgba(0,0,0,0.16);
+  box-shadow: inset 0px 4px 12px 5px rgba(0,0,0,0.16);
 
 }
 .styleButtonHeader:hover{
@@ -20,8 +20,25 @@
   padding:18px 16px;
   border-right: 2px solid black;
   font-size: 1.2em;
-  box-shadow: inset 0px 8px 12px 5px rgba(0,0,0,0.16);
+  box-shadow: inset 0px 4px 12px 5px rgba(0,0,0,0.16);
 }
+.styleButtonHobbies{
+  background-color: #D5DBFA;
+  font-size: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  padding: 5px 25px;
+}
+.styleButtonHobbiesActive{
+  background-color: rgba(1,7,12,0.20);
+  font-size: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  padding: 5px 25px;
+}
+.styleButtonHobbies:hover{
+  text-decoration: underline;
+}
+
+
 .buttonHomepageGauche{
   cursor: pointer;
   position:relative;
@@ -56,7 +73,9 @@
 }
 .langueFr{
   background: linear-gradient(to right,mediumblue 33%,white 34%,white 66%, red 67%, red 100%);
-  padding: 10px 20px;
+  width:34px;
+  height:20px;
+  /*padding: 11px 10px;*/
   border: 2px solid black;
   cursor:pointer;
   border-radius: 8px;
@@ -64,7 +83,9 @@
 }
 .langueFrActive{
   background: linear-gradient(to right,mediumblue 33%,white 34%,white 66%, red 67%, red 100%);
-  padding: 10px 20px;
+  /*padding: 10px 10px;*/
+  width:32px;
+  height:18px;
   border: 4px solid black;
   cursor:pointer;
   border-radius: 8px;
@@ -72,6 +93,8 @@
 }
 .langueEn:hover, .langueFr:hover{
   border:3px solid black;
+  width:33px;
+  height:19px;
 }
 
 .langueEnActive{
@@ -79,14 +102,20 @@
   border:4px solid black;
   cursor:pointer;
   border-radius: 8px;
-  padding:10px 20px;
-  background: linear-gradient(29deg, rgba(255,255,255,1) 0%, rgba(255,222,225,1) 39%, rgba(180,0,0,1) 40%, rgba(195,70,73,1) 61%, rgba(1,0,102,1) 75%, rgba(255,255,255,1) 82%, rgba(182,63,55,1) 98%, rgba(255,245,242,1) 98%);
+  width:32px;
+  height:19px;
+  display: flex;
 }
-.langueEn{
-  margin-top:2px;
-  border:2px solid black;
-  cursor:pointer;
+.langueEn {
+  margin-top: 2px;
+  border: 2px solid black;
+  cursor: pointer;
   border-radius: 8px;
-  padding:10px 20px;
-  background: linear-gradient(29deg, rgba(255,255,255,1) 0%, rgba(255,222,225,1) 39%, rgba(180,0,0,1) 40%, rgba(195,70,73,1) 61%, rgba(1,0,102,1) 75%, rgba(255,255,255,1) 82%, rgba(182,63,55,1) 98%, rgba(255,245,242,1) 98%);
+  width:34px;
+  height:20px;
+  display: flex;
+}
+#drapeauEn{
+  overflow: hidden;
+  border-radius: 8px;
 }

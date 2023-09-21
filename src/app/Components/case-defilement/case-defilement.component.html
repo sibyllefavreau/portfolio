@@ -1,0 +1,28 @@
+<div class="{{styleClass}}">
+  <h1> {{titreSection}}</h1>
+  <div class="contenant">
+    <div id="groupe">
+      <div id="fleches">
+        <div class="logo" class="fa-solid fa-caret-left fa-10x" (click)="defilerGauche()" ></div>
+      </div>
+      <div id="sectionImages">
+        <div class="bloc">
+          <h2>{{titreGateau[numero][param.langue]}}</h2>
+          <img class="images" src="{{photos[numero]}}">
+        </div>
+        <div class="bloc">
+          <h2>{{titreGateau[numero+1][param.langue]}}</h2>
+          <img class="images" src="{{photos[numero+1]}}">
+        </div>
+        <div class="bloc">
+          <h2>{{titreGateau[numero+2][param.langue]}}</h2>
+          <img class="images" src="{{photos[numero+2]}}">
+        </div>
+      </div>
+      <div id="fleches">
+        <div  class="logo" class="fa-solid fa-caret-right fa-10x" (click)="defilerDroite()"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
