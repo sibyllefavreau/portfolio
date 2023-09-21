@@ -31,6 +31,7 @@ import { PanneauDateComponent } from './Components/panneau-date/panneau-date.com
 import { MenuLoisirsComponent } from './Components/menu-loisirs/menu-loisirs.component';
 import { CaseEntremetComponent } from './Components/case-entremet/case-entremet.component';
 import { CaseDefilementComponent } from './Components/case-defilement/case-defilement.component';
+import { BulleMusiqueComponent } from './Components/bulle-musique/bulle-musique.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { CaseDefilementComponent } from './Components/case-defilement/case-defil
     MenuLoisirsComponent,
     CaseEntremetComponent,
     CaseDefilementComponent,
+    BulleMusiqueComponent,
 
   ],
   imports: [
