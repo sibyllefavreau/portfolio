@@ -9,4 +9,5 @@ export class PanneauDateComponent {
   @Input() date: string | undefined;
   @Input() style: string | undefined;
   @Input() image: string | undefined;
+  @Input() taille: number[]=[0,0];
 }

@@ -11,8 +11,8 @@
       <img id="stockholm" src="assets/Stockholm.png">
       <app-panneau-date id="panneauStockholm" [style]="'panneau'" [date]="'08/2023'"></app-panneau-date>
 
-      <app-panneau-date id="bac" [style]="'etape'" [date]="panneauEtape[0][param.langue]" [image]="'assets/bac.png'"></app-panneau-date>
-    <app-panneau-date id="gm" [style]="'etape2'" [date]="panneauEtape[1][param.langue]" [image]="'assets/gm.png'"></app-panneau-date>
+      <app-panneau-date id="bac" [taille]="[50,70]" [style]="'etape'" [date]="panneauEtape[0][param.langue]" [image]="'assets/bac.png'"></app-panneau-date>
+    <app-panneau-date id="gm" [taille]="[95,120]" [style]="'etape2'" [date]="panneauEtape[1][param.langue]" [image]="'assets/gm.png'"></app-panneau-date>
     <app-panneau-date id="ingenieur" [style]="'etape'" [date]="panneauEtape[2][param.langue]" ></app-panneau-date>
     <div class="explication" id="caseNantes">{{explicationPanneau[0][param.langue]}}</div>
     <div class="explication" id="caseBac">{{explicationPanneau[1][param.langue]}}</div>
