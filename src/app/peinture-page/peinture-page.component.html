@@ -1,4 +1,10 @@
 <div id="presentation">
   <app-menu-loisirs id="barMenu"></app-menu-loisirs>
   <app-titre-page [logo]="'assets/pinceau.png'" [texteTitre]="titrePage[param.langue]" [taille]="[90,70]"></app-titre-page>
+  <p>{{description[param.langue]}}</p>
+</div>
+
+<div id="peinture">
+  <app-case-defilement [tailleImage]="[200,250]" [titrePeinture]="titrePeinture[0][param.langue]" [titreGateau]="titreGateau" [photos]="photosPeinture[0]" [styleClass]="'peinture'" [peintureFinie]="photoPeintureFinie[0]" ></app-case-defilement>
+  <app-case-defilement [tailleImage]="[250,225]" [titrePeinture]="titrePeinture[1][param.langue]" [titreGateau]="titreGateau" [photos]="photosPeinture[1]" [styleClass]="'peinture'" [peintureFinie]="photoPeintureFinie[1]" ></app-case-defilement>
 </div>

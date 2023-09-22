@@ -45,3 +45,12 @@ h1{
 #sectionImages{
   display: inline-flex;
 }
+.peinture{
+  text-align: center;
+}
+.peinture #groupe{
+  margin-top: -20px;
+}
+#finie{
+  margin-left: 10px;
+}

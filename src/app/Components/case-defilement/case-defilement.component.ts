@@ -11,6 +11,9 @@ export class CaseDefilementComponent {
   @Input() titreSection:string |undefined
   @Input() titreGateau:string[][] =[['']];
   @Input() photos:string[] =[''];
+  @Input() peintureFinie:string |undefined
+  @Input() titrePeinture:string |undefined
+  @Input() tailleImage:number[]=[0,0];
 
   numero: number =0;
 

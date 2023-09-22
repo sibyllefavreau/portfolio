@@ -1,6 +1,7 @@
 <div class="{{styleClass}}">
   <h1> {{titreSection}}</h1>
   <div class="contenant">
+    <h2 *ngIf="styleClass=='peinture'">{{titrePeinture}}</h2>
     <div id="groupe">
       <div id="fleches">
         <div class="logo" class="fa-solid fa-caret-left fa-10x" (click)="defilerGauche()" ></div>
@@ -22,6 +23,7 @@
       <div id="fleches">
         <div  class="logo" class="fa-solid fa-caret-right fa-10x" (click)="defilerDroite()"></div>
       </div>
+      <img *ngIf="styleClass=='peinture'" id="finie" class="imag" src="{{peintureFinie}}" height="{{tailleImage[0]}}" width="{{tailleImage[1]}}">
     </div>
 
   </div>
