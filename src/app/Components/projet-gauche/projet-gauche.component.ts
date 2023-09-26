@@ -10,5 +10,6 @@ export class ProjetGaucheComponent {
   @Input() title: string | undefined;
   @Input() description: string | undefined;
   @Input() symbol: string[] =[];
+  @Input() taille: number[] =[0,0];
 
 }
