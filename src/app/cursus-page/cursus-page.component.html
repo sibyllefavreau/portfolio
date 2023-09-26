@@ -1,6 +1,9 @@
 <div id="pageCursus">
   <app-titre-page id="titrePage" [texteTitre]="titrePage[param.langue]"></app-titre-page>
-  <div id="cursus">
+  <div id="telecharger">
+    <a _ngcontent-frv-c7="" href="./assets/CV_FAVREAU_Sibylle.pdf" download="CV_FAVREAU_Sibylle.pdf" class="linkCV">{{cv[param.langue]}}</a>
+  </div>
+    <div id="cursus">
       <img id="route" src="assets/route.svg">
       <img id="paris" src="assets/Paris.png">
       <app-panneau-date id="naissance" [style]="'panneau'" [date]="'19/01/2002'"></app-panneau-date>
