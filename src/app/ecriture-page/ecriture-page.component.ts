@@ -10,6 +10,7 @@ import {ChangerPageService} from "../changer-page.service";
 })
 export class EcriturePageComponent {
   titrePage=['Mes oeuvres littéraires','My literary works'];
+  messageErreur=["[Cette page est en cours de construction elle n'est malheureusement pas encore finie, revenez plus tard et vous aurez peut-être la chance de la voir aboutie]","[This page is still under construction, but unfortunately it's not finished yet. Come back later and you may be lucky enough to see it completed.]"];
 
   constructor(public param: VariablesGlobales, public route: Router, service: ChangerPageService) {
     param.chemin = this.route.url;
