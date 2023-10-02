@@ -40,4 +40,28 @@
     padding:5px;
     margin-right:20px;
 }
+@media only screen and (max-width: 600px) {
+  #case{
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    align-items: center;
+  }
 
+  img{
+    width:150px;
+    height:auto;
+  }
+
+  #titre{
+    font-size: 1.4em;
+  }
+  #decrire{
+    font-size: 0.6em;
+  }
+  #symbole{
+    transform: scale(0.5);
+    margin-top: -20px;
+  }
+}

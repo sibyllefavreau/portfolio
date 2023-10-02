@@ -3,3 +3,8 @@
   background: linear-gradient(rgba(254,255,215,0.25),rgba(128,4,4,0.1));
 }
 
+@media only screen and (max-width: 600px)  {
+  #projets{
+    height:2600px;
+  }
+}
