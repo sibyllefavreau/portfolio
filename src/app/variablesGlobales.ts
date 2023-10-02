@@ -9,4 +9,5 @@ export class VariablesGlobales {
   chemin: string = this.route.url ;
   langue: number=0;
   nbEntremet: string='1';
+  largeurEcran: number=0;
 }

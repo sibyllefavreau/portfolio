@@ -10,5 +10,7 @@ p{
     font-size: 0.7em;
     margin: 0 10px;
   }
-
+  #peinture{
+    /*transform: scale(0.6);*/
+  }
 }
