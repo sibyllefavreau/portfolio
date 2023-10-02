@@ -1,13 +1,13 @@
 #imagePrincipale{
   width:100%;
-  height: 700px;
+  height: 525px;
   z-index:1;
 }
 h1{
   text-align: center;
   color: white;
   font-size: 6em;
-  margin-top: -550px;
+  margin-top: -400px;
   text-shadow: 1px 1px 2px black;
   font-family: 'Inika', sans-serif;
 }
@@ -28,20 +28,22 @@ h1{
   background: linear-gradient(#FEFFD7,#FFC2C2);
   text-decoration-color: black;
   color: black;
-  margin-top: 250px;
+  margin-top: 100px;
 }
 .monParcours{
   display: flex;
-  width:100%;
-  height:350px;
-  justify-content: flex-end;
+  width:1300px;
+  height:275px;
+  /*justify-content: flex-end;*/
+  justify-content: right;
+  margin-right: 0px;
   z-index: 1;
   margin-bottom: 50px;
 }
 .caseParcours{
   position:relative;
   height:100%;
-  width:60%;
+  width:800px;
   margin-right: 60px;
   background-color: rgba(78,3,3,0.18);
   border-radius: 30px;
@@ -53,51 +55,46 @@ h1{
 }
 
 .caseParcours, .caseProjets {
-  border: 2px dashed transparent;
+  border: 2px dashed black;
   transform: scale(1);
   transition: transform 0.6s ease-in-out;
 }
 
 .caseParcours:hover, .caseProjets:hover {
-  border-color: black;
+  border: 3px dashed black;
   background-color: rgba(78,3,3,0.30);
   transform: scale(1.05);
 }
 
 #svgParcours {
-  width: 100%;
-  height: 100%;
+ transform: scale(0.9);
 }
 #engre{
   margin-right: 375px;
 }
 #chapeau{
-  /*background : url(assets/bac.png)no-repeat;*/
   position:absolute;
   left:0;
   top:32%;
   margin-left: 600px;
-  /*border: 3px solid red;*/
   height:130px;
   width:180px;
-  transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(0.9);
 }
 #livre{
-  /*background : url(assets/livre.png)no-repeat;*/
   position:absolute;
   left:0;
   top:75%;
   margin-left: 365px;
-  /*border: 3px solid red;*/
   height:500px;
   width:650px;
-  transform: translateY(-50%) scale(0.25);
+  transform: translateY(-50%) scale(0.2);
 }
 
 .mesProjets{
   display: flex;
-  width:100%;
-  height:350px;
+  width:1300px;
+  height:275px;
   justify-content: flex-start;
   z-index: 1;
   margin-bottom: 50px;
@@ -105,7 +102,7 @@ h1{
 .caseProjets{
   position:relative;
   height:100%;
-  width:60%;
+  width:800px;
   margin-left: 60px;
   background-color: rgba(78,3,3,0.18);
   border-radius: 30px;
@@ -115,12 +112,13 @@ h1{
   align-items: center;
   cursor:pointer;
 }
+#brain{
+  transform:scale(0.9);
+}
 #code{
   margin-left: 10px;
-  margin-top: 20px;
   width:450px;
-  height:250px;
-  /*overflow: hidden;*/
+  height:230px;
   background-color: black;
   color:springgreen;
   border: 3px solid green;
@@ -207,23 +205,23 @@ h1{
   position:relative;
 }
 #tennis{
-  transform: scale(0.6);
-  margin-top: 175px;
-  margin-left: -60px;
+  transform: scale(0.5);
+  margin-top: 155px;
+  margin-left: -50px;
 }
 #ecrire{
   position: absolute;
   width:900px;
   height:700px;
-  transform: scale(0.22);
+  transform: scale(0.18);
   left:-300px;
-  top:-260px;
+  top:-270px;
 }
 #palette{
   position: absolute;
   width:500px;
   height:450px;
-  transform: scale(0.4);
+  transform: scale(0.3);
   left:160px;
   top:-130px;
 }
@@ -231,8 +229,51 @@ h1{
   position: absolute;
   width:1800px;
   height:1900px;
-  transform: scale(0.16);
+  transform: scale(0.15);
   left:-250px;
 }
-
+@media only screen and (max-width: 600px)  {
+  .caseParcours, .caseProjets{
+    transform:scale(0.40) ;
+  }
+  .caseProjets{
+    margin-left: -200px;
+    margin-top: 20px;
+  }
+  .caseParcours{
+    margin-left: -200px;
+  }
+  app-button-head{
+    margin:0px auto 0 auto;
+    transform: scale(0.5);
+    position:absolute;
+  }
+  .mesProjets, .monParcours{
+    justify-content: left;
+    margin-bottom:-20px;
+  }
+  #homePage{
+    overflow-x: hidden;
+  }
+  .presentation{
+    margin-top: 0px;
+  }
+  #nomSib{
+    transform: scale(0.5);
+    margin-top:-150px;
+  }
+  h1{
+    transform: scale(0.5);
+    margin-top: -300px;
+  }
+  #traitImagePrincipale{
+    margin-top: -100px;
+  }
+  #imagePrincipale{
+    height:400px;
+  }
+  .caseParcours:hover, .caseProjets:hover{
+    transform: scale(0.45);
+  }
+}
 

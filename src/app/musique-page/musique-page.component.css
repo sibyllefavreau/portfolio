@@ -69,3 +69,22 @@
   position: relative;
   margin-right: -30px;
 }
+@media only screen and (max-width: 600px)  {
+  #parcours{
+    transform: scale(0.34);
+    margin-left: -420px;
+    margin-top: -500px;
+    overflow-x: hidden;
+  }
+  #paragraphe{
+    font-size: 0.7em;
+    margin: 0 10px;
+  }
+ #pageMusique{
+   height:1150px;
+   overflow-x: hidden;
+ }
+ #titreLoisir{
+   margin-top: -20px;
+ }
+}

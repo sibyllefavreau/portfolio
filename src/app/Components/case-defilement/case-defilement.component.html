@@ -3,26 +3,29 @@
   <div class="contenant">
     <h2 *ngIf="styleClass=='peinture'">{{titrePeinture}}</h2>
     <div id="groupe">
-      <div id="fleches">
-        <div class="logo" class="fa-solid fa-caret-left fa-10x" (click)="defilerGauche()" ></div>
-      </div>
-      <div id="sectionImages">
-        <div class="bloc">
-          <h2>{{titreGateau[numero][param.langue]}}</h2>
-          <img class="images" src="{{photos[numero]}}">
+      <div id="flecheEtPhotos">
+        <div id="fleches">
+          <div class="logo" class="fa-solid fa-caret-left fa-10x" (click)="defilerGauche()" ></div>
         </div>
-        <div class="bloc">
-          <h2>{{titreGateau[numero+1][param.langue]}}</h2>
-          <img class="images" src="{{photos[numero+1]}}">
+        <div id="sectionImages">
+          <div class="bloc">
+            <h2>{{titreGateau[numero][param.langue]}}</h2>
+            <img class="images" src="{{photos[numero]}}">
+          </div>
+          <div  *ngIf="param.largeurEcran>600" class="bloc">
+            <h2>{{titreGateau[numero+1][param.langue]}}</h2>
+            <img class="images" src="{{photos[numero+1]}}">
+          </div>
+          <div *ngIf="param.largeurEcran>600" class="bloc">
+            <h2>{{titreGateau[numero+2][param.langue]}}</h2>
+            <img class="images" src="{{photos[numero+2]}}">
+          </div>
         </div>
-        <div class="bloc">
-          <h2>{{titreGateau[numero+2][param.langue]}}</h2>
-          <img class="images" src="{{photos[numero+2]}}">
+        <div id="fleches">
+          <div  class="logo" class="fa-solid fa-caret-right fa-10x" (click)="defilerDroite()"></div>
         </div>
       </div>
-      <div id="fleches">
-        <div  class="logo" class="fa-solid fa-caret-right fa-10x" (click)="defilerDroite()"></div>
-      </div>
+
       <img *ngIf="styleClass=='peinture'" id="finie" class="imag" src="{{peintureFinie}}" height="{{tailleImage[0]}}" width="{{tailleImage[1]}}">
     </div>
 

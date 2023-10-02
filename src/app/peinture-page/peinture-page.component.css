@@ -4,3 +4,13 @@ p{
   font-size: 1.2em;
   margin: 0 70px;
 }
+@media only screen and (max-width: 600px)  {
+
+  p{
+    font-size: 0.7em;
+    margin: 0 10px;
+  }
+  #peinture{
+    /*transform: scale(0.6);*/
+  }
+}

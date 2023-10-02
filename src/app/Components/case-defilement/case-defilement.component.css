@@ -30,6 +30,9 @@ h1{
   display:inline-flex;
   align-items: center;
 }
+#flecheEtPhotos{
+  display: inline-flex;
+}
 #fleches {
   margin-top: 60px;
   color: #322727;
@@ -51,6 +54,39 @@ h1{
 .peinture #groupe{
   margin-top: -20px;
 }
-#finie{
+#finie {
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px)  {
+  p{
+    font-size: 0.7em;
+    margin: 0 10px;
+  }
+
+  #groupe{
+    display: flex;
+    flex-direction: column;
+  }
+  #flecheEtPhotos{
+    transform: scale(0.75);
+    margin-top: -20px;
+  }
+  h2{
+    font-size: 1.3em;
+  }
+  .contenant{
+    height:460px;
+  }
+  #finie{
+    transform: scale(0.9);
+    margin-top: -20px;
+  }
+  .gateaux  #flecheEtPhotos {
+    transform: scale(1.4);
+    margin-top: 70px;
+  }
+  .gateaux h2{
+    font-size: 1.6em;
+  }
 }

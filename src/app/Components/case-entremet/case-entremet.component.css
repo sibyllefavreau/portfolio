@@ -37,3 +37,14 @@ p{
   font-family: 'Indie Flower', cursive;
 }
 
+@media only screen and (max-width: 600px) {
+  #text{
+    width:290px;
+    font-size: 1.2em;
+    margin-top: -30px;
+    margin-left: 5px;
+  }
+  #caseEntremet{
+    width:95%;
+  }
+}
