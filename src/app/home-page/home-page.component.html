@@ -1,51 +1,54 @@
-<div id="entree">
-  <img id="imagePrincipale" src="assets/accueil.jpg">
-  <h1> Portfolio </h1>
-  <h1 id="nomSib"> Sibylle Favreau</h1>
-  <div id="traitImagePrincipale"></div>
-</div>
-<section class="presentation">
-  <div class="monParcours" (click)="onTopDirect()"  routerLink="cursus" >
+<div id="homePage">
+  <div id="entree">
+    <img id="imagePrincipale" src="assets/accueil.jpg">
+    <h1> Portfolio </h1>
+    <h1 id="nomSib"> Sibylle Favreau</h1>
+    <div id="traitImagePrincipale"></div>
+  </div>
+  <section class="presentation">
+    <div class="monParcours" (click)="onTopDirect()"  routerLink="cursus" >
 
-    <app-button-head (click)="onTopDirect()"  class="button" routerLink="cursus" [styleClass]="'buttonHomepageGauche'"
-                     [texteBouton]="this.texteBouton[0][param.langue]"></app-button-head>
-    <div class="caseParcours">
-      <div id="svgParcours">
-        <app-svg-parcours ></app-svg-parcours>
+      <app-button-head (click)="onTopDirect()"  class="button" routerLink="cursus" [styleClass]="'buttonHomepageGauche'"
+                       [texteBouton]="this.texteBouton[0][param.langue]"></app-button-head>
+      <div class="caseParcours">
+        <div id="svgParcours">
+          <app-svg-parcours ></app-svg-parcours>
+        </div>
+        <app-engrenage id="engre"></app-engrenage>
+        <img id="chapeau" src="assets/bac.png">
+        <img id="livre" src="assets/livre.png">
       </div>
-      <app-engrenage id="engre"></app-engrenage>
-      <img id="chapeau" src="assets/bac.png">
-      <img id="livre" src="assets/livre.png">
     </div>
-</div>
-  <div class="mesProjets">
-  <div class="caseProjets" (click)="onTopDirect()"  routerLink="projets">
-    <div id="code">
-      <p class="texte-tape" class="animation-tape"> public void displayGamePrincipalState(Controller c) &#123;                     </p>
-      <p class="texte-tape" class="animation-tape"><span class="indemt">logger.trace("start displayGamePrincipalState(Controller c)");</span></p>
-      <p class="texte-tape" class="animation-tape"><span class="indemt"> c.changeActivedNavBarButton(c.getGameNavBarButton());</span></p>
-      <p class="texte-tape" class="animation-tape">  <span class="indemt">    c.getPaneToolBar().getChildren().remove(c.getCellPannel());</span></p>
-      <p class="texte-tape" class="animation-tape">    <span class="indemt">  Controller.setCurrentState(c.gamePrincipalState);</span></p>
-      <p class="texte-tape" class="animation-tape">   <span class="indemt">   logger.trace("end start displayGamePrincipalState(Controller c)");</span></p>
-    </div>
-    <app-svg-brainstorm></app-svg-brainstorm>
-  </div>
-    <app-button-head  (click)="onTopDirect()" class="button"
-                     routerLink="projets" [styleClass]="'buttonHomepageDroite'" [texteBouton]="
+    <div class="mesProjets">
+      <div class="caseProjets" (click)="onTopDirect()"  routerLink="projets">
+        <div id="code">
+          <p class="texte-tape" class="animation-tape"> public void displayGamePrincipalState(Controller c) &#123;                     </p>
+          <p class="texte-tape" class="animation-tape"><span class="indemt">logger.trace("start displayGamePrincipalState(Controller c)");</span></p>
+          <p class="texte-tape" class="animation-tape"><span class="indemt"> c.changeActivedNavBarButton(c.getGameNavBarButton());</span></p>
+          <p class="texte-tape" class="animation-tape">  <span class="indemt">    c.getPaneToolBar().getChildren().remove(c.getCellPannel());</span></p>
+          <p class="texte-tape" class="animation-tape">    <span class="indemt">  Controller.setCurrentState(c.gamePrincipalState);</span></p>
+          <p class="texte-tape" class="animation-tape">   <span class="indemt">   logger.trace("end start displayGamePrincipalState(Controller c)");</span></p>
+        </div>
+        <app-svg-brainstorm id="brain"></app-svg-brainstorm>
+      </div>
+      <app-button-head  (click)="onTopDirect()" class="button"
+                        routerLink="projets" [styleClass]="'buttonHomepageDroite'" [texteBouton]="
                     this.texteBouton[1][param.langue]" style="white-space: pre-line;"></app-button-head>
-  </div>
-  <div class="monParcours">
-    <app-button-head (click)="onTopDirect()"  class="button" routerLink="loisirs" [styleClass]="'buttonHomepageGauche'"
-                     [texteBouton]="this.texteBouton[2][param.langue]"></app-button-head>
-    <div class="caseParcours" (click)="onTopDirect()"  id="caseLoisir" routerLink="loisirs">
-      <app-tennis id="tennis"></app-tennis>
-      <img id="ecrire" src="assets/ecrire.png">
-      <img id="palette" src="assets/palettePeintre.png">
-      <img id="saxo" src="assets/saxo.png">
     </div>
+    <div class="monParcours">
+      <app-button-head (click)="onTopDirect()"  class="button" routerLink="loisirs" [styleClass]="'buttonHomepageGauche'"
+                       [texteBouton]="this.texteBouton[2][param.langue]"></app-button-head>
+      <div class="caseParcours" (click)="onTopDirect()"  id="caseLoisir" routerLink="loisirs">
+        <app-tennis id="tennis"></app-tennis>
+        <img id="ecrire" src="assets/ecrire.png">
+        <img id="palette" src="assets/palettePeintre.png">
+        <img id="saxo" src="assets/saxo.png">
+      </div>
 
-  </div>
-</section>
+    </div>
+  </section>
+</div>
+
 
 
 
