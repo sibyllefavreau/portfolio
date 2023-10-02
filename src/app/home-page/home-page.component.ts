@@ -9,9 +9,9 @@ import {Router} from "@angular/router";
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent {
-  texteBouton=[
+  texteBouton = [
     ["Mon parcours", "My career"],
-  ["Mes projets mécaniques\net informatiques","My mechanical and\ncomputer projects"],
+    ["Mes projets mécaniques\net informatiques", "My mechanical and\ncomputer projects"],
     ["Mes loisirs", "My hobbies"]
   ];
 
@@ -20,6 +20,17 @@ export class HomePageComponent {
     if (param.chemin == '/') {
       service.styleBoutonsHeader = ["styleButtonHeaderActive", "styleButtonHeader", "styleButtonHeader", "styleButtonHeader", "styleButtonHeader"];
     }
+  }
+
+  onTopDirect() {
+    let scrollToTop = window.setInterval(() => {
+      let pos = window.pageYOffset;
+      if (pos > 0) {
+        window.scrollTo(0, 0); // how far to scroll on each step
+      } else {
+        window.clearInterval(scrollToTop);
+      }
+    }, 16);
   }
 }
 
