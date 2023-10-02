@@ -15,10 +15,10 @@
         <div class="logo" class="fa-solid fa-chevron-right fa-2x"></div>
       </div>
     </div>
-    <app-case-entremet [titreGateau]="titreEntremet[this.nombreEntremet][param.langue]" [description]="description[this.nombreEntremet][param.langue]" [photoGateau]="photoEntremet[this.nombreEntremet]" [photoPartGateau]="photoPartEntremet[this.nombreEntremet]" [schemaGateau]="schemaEntremet[0]"></app-case-entremet>
+    <app-case-entremet id="caseee" [titreGateau]="titreEntremet[this.nombreEntremet][param.langue]" [description]="description[this.nombreEntremet][param.langue]" [photoGateau]="photoEntremet[this.nombreEntremet]" [photoPartGateau]="photoPartEntremet[this.nombreEntremet]" [schemaGateau]="schemaEntremet[0]"></app-case-entremet>
   </div>
-  <div class="entremets">
-    <app-case-defilement [titreSection]="titreSection[1][param.langue]" [titreGateau]="titreGateau" [photos]="photoGateau"></app-case-defilement>
+  <div class="entremetsGateaux">
+    <app-case-defilement [styleClass]="'gateaux'" [titreSection]="titreSection[1][param.langue]" [titreGateau]="titreGateau" [photos]="photoGateau"></app-case-defilement>
   </div>
 
 </div>

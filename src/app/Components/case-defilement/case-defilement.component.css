@@ -63,9 +63,7 @@ h1{
     font-size: 0.7em;
     margin: 0 10px;
   }
-  #peinture{
-    /*transform: scale(0.6);*/
-  }
+
   #groupe{
     display: flex;
     flex-direction: column;
@@ -83,5 +81,12 @@ h1{
   #finie{
     transform: scale(0.9);
     margin-top: -20px;
+  }
+  .gateaux  #flecheEtPhotos {
+    transform: scale(1.4);
+    margin-top: 70px;
+  }
+  .gateaux h2{
+    font-size: 1.6em;
   }
 }

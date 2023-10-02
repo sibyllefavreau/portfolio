@@ -1,4 +1,7 @@
 import {Component, Input} from '@angular/core';
+import {VariablesGlobales} from "../../variablesGlobales";
+import {Router} from "@angular/router";
+import {ChangerPageService} from "../../changer-page.service";
 
 @Component({
   selector: 'app-case-entremet',
@@ -11,4 +14,7 @@ export class CaseEntremetComponent {
   @Input() photoPartGateau: string | undefined;
   @Input() schemaGateau: string | undefined;
   @Input() description: string | undefined;
+
+  constructor(public param: VariablesGlobales) {
+  }
 }

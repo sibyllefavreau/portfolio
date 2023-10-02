@@ -4,8 +4,8 @@
     <img id="photosGateau" src="{{photoGateau}}">
     <img id="photosPartGateau" src="{{photoPartGateau}}">
     <div id="text">
-      <p>{{description}}</p>
-      <img id="schema" src="{{schemaGateau}}">
+      <p id="decrire">{{description}}</p>
+      <img *ngIf="param.largeurEcran>600" id="schema" src="{{schemaGateau}}">
     </div>
   </div>
 </div>

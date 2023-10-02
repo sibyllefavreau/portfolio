@@ -10,7 +10,7 @@ h2{
   font-size: 2em;
   text-decoration: underline;
 }
-.entremets{
+.entremets, .entremetsGateaux{
   width:80%;
   height:100%;
   border: 2px solid black;
@@ -50,5 +50,30 @@ p{
   margin: 15px 20px 0px 20px;
 }
 
+@media only screen and (max-width: 600px)  {
 
+  #paragraphe{
+    font-size: 0.7em;
+    margin: 0 10px;
+  }
+  #titreLoisir{
+    margin-top: -20px;
+  }
+  #page{
+    overflow-x: hidden;
+    width:100%;
+  }
+  .entremets{
+    transform: scale(0.4);
+    width:900px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+  }
+  .entremetsGateaux{
+    width:900px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    transform: scale(0.4);
+  }
+}
 
