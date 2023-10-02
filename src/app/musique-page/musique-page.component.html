@@ -1,8 +1,9 @@
-<div id="presentation">
-  <app-menu-loisirs id="barMenu"></app-menu-loisirs>
-  <app-titre-page id="titreLoisir" [texteTitre]="titrePage[param.langue]" [logo]="'assets/noteMusique.png'" [taille]="[50,50]"></app-titre-page>
-  <p id="paragraphe">{{paragraphe[param.langue]}}</p>
-</div>
+<section id="pageMusique">
+  <div id="presentation">
+    <app-menu-loisirs id="barMenu"></app-menu-loisirs>
+    <app-titre-page id="titreLoisir" [texteTitre]="titrePage[param.langue]" [logo]="'assets/noteMusique.png'" [taille]="[50,50]"></app-titre-page>
+    <p id="paragraphe">{{paragraphe[param.langue]}}</p>
+  </div>
 
   <div id="parcours">
     <div id="parcours1">
@@ -51,34 +52,34 @@
       <div class="traitHorizontal"></div>
       <div class="traitVerticalBasGrand"></div>
     </div>
-  <div id="parcours4">
-    <div class="sousParcours">
-      <div class="traitVerticalBasGrand"></div>
-      <div class="traitHorizontal"></div>
-      <div class="traitHorizontal"></div>
-      <div class="traitHorizontalPetit"></div>
-    </div>
-    <div id="2parcours2" style="width: 385px;">
+    <div id="parcours4">
       <div class="sousParcours">
-        <div class="traitVerticalBas"></div>
+        <div class="traitVerticalBasGrand"></div>
+        <div class="traitHorizontal"></div>
+        <div class="traitHorizontal"></div>
         <div class="traitHorizontalPetit"></div>
-        <app-bulle-musique [annee]="year[4]" [description]="description[4][param.langue]" [images]="[images[4][0],images[4][1]]"></app-bulle-musique>
-        <div class="traitHorizontalPetit"></div>
-        <div class="traitVerticalBas"></div>
+      </div>
+      <div id="2parcours2" style="width: 385px;">
+        <div class="sousParcours">
+          <div class="traitVerticalBas"></div>
+          <div class="traitHorizontalPetit"></div>
+          <app-bulle-musique [annee]="year[4]" [description]="description[4][param.langue]" [images]="[images[4][0],images[4][1]]"></app-bulle-musique>
+          <div class="traitHorizontalPetit"></div>
+          <div class="traitVerticalBas"></div>
+        </div>
+        <div class="sousParcours">
+          <div class="traitVerticalHaut"></div>
+          <div class="traitHorizontalPetit"></div>
+          <iframe width="229" height="135" src="https://www.youtube.com/embed/fXSjpTEuALw?si=8WG_8ixIOJ2iOMfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="traitHorizontalPetit"></div>
+          <div class="traitVerticalHaut"></div>
+        </div>
       </div>
       <div class="sousParcours">
-        <div class="traitVerticalHaut"></div>
-        <div class="traitHorizontalPetit"></div>
-        <iframe width="229" height="135" src="https://www.youtube.com/embed/fXSjpTEuALw?si=8WG_8ixIOJ2iOMfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="traitHorizontalPetit"></div>
         <div class="traitVerticalHaut"></div>
       </div>
     </div>
-    <div class="sousParcours">
-      <div class="traitHorizontalPetit"></div>
-      <div class="traitVerticalHaut"></div>
-    </div>
-  </div>
     <div id="parcours5">
       <div class="sousParcours">
         <div class="traitVerticalHaut"></div>
@@ -136,6 +137,8 @@
       </div>
     </div>
   </div>
+</section>
+
 
 
 

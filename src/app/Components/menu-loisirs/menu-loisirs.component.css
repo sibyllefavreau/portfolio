@@ -12,3 +12,8 @@ nav{
   cursor:pointer;
   float:left;
 }
+@media only screen and (max-width: 600px) {
+  nav{
+    margin-top: 45px;
+  }
+}

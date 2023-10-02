@@ -126,6 +126,8 @@
     padding:12px 8px;
     font-size: 1em;
   }
-
-
+  .styleButtonHobbies, .styleButtonHobbiesActive{
+    font-size: 0.85em;
+    padding: 5px 15px;
+  }
 }
