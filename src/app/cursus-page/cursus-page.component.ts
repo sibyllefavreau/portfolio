@@ -22,7 +22,8 @@ export class CursusPageComponent {
     ['Je suis rentrée en génie mécanique pour mes 3 dernières années en spécialité modélisation et expérimentation','I studied mechanical engineering for my last 3 years, specialising in modelling and experimentation.'],
     ['Je réalise un erasmus à Stockholm à KTH durant 1 semestre','I\'m doing an erasmus in Stockholm at KTH for 1 semester']
   ];
-  cv=['Télécharger mon CV', 'Download my CV (only available in French)'];
+  cv=['Télécharger mon CV', 'Download my CV'];
+  cvassets=["./assets/CV_FAVREAU_Sibylle.pdf","./assets/Curriculum_FAVREAU_Sibylle.pdf"];
 
   constructor(public param: VariablesGlobales, public route: Router, service: ChangerPageService) {
     param.chemin = this.route.url;
