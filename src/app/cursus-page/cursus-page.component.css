@@ -60,9 +60,15 @@ a{
 }
 #stockholm{
   position: absolute;
-  transform:scale(0.3) rotate(-15deg);
-  left:-350px;
-  top:250px;
+  transform:scale(0.3) rotate(-20deg);
+  left:-320px;
+  top:240px;
+}
+#lille{
+  position:absolute;
+  transform:scale(0.4) rotate(-15deg);
+  top:735px;
+  left:-250px;
 }
 #naissance{
   height: 50px;
@@ -85,9 +91,15 @@ a{
 }
 #panneauStockholm{
   position: absolute;
-  transform: rotate(-11deg);
-  top:610px;
-  left:325px;
+  transform: rotate(-15deg);
+  top:600px;
+  left:350px;
+}
+#panneauLille{
+  position: absolute;
+  top:960px;
+  transform: rotate(-12deg);
+  left:200px;
 }
 #bac{
   position: absolute;
@@ -101,8 +113,8 @@ a{
 }
 #ingenieur{
   position: absolute;
-  top:900px;
-  left:100px;
+  top:915px;
+  left:-50px;
 }
 .explication{
   border: 3px dashed black;
@@ -111,7 +123,7 @@ a{
   border-radius: 20px;
   font-family: 'Inika', sans-serif;
   height:100px;
-  width:200px;
+  width:210px;
   padding:15px 10px;
   box-shadow: 4px 8px 11px 0px rgba(0,0,0,0.35);
   align-items: center;
@@ -136,8 +148,14 @@ a{
   top:700px;
 }
 #caseErasmus{
-  top:600px;
+  top:590px;
+  left:70px;
   transform: rotate(-10deg);
+}
+#casePFE{
+  top:1125px;
+  left:300px;
+  transform: rotate(-13deg);
 }
 
 @media only screen and (max-width: 600px) {

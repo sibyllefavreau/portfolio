@@ -20,7 +20,8 @@ export class CursusPageComponent {
     ['J’ai obtenu mon baccalauréat scientifique spécialité mathématiques mention très bien (avec 18.95 de moyenne)','I passed my scientific baccalauréat with honours, specialising in mathematics (with an average of 18.95).'],
     ['J’ai fait mes études à l’INSA (Institut National des Arts Appliqués) de Lyon, classée 40 sur 800 en fin de 2e année','I studied at the INSA (National Institute of Applied Arts) in Lyon, ranking 40 out of 800 at the end of my 2nd year.'],
     ['Je suis rentrée en génie mécanique pour mes 3 dernières années en spécialité modélisation et expérimentation','I studied mechanical engineering for my last 3 years, specialising in modelling and experimentation.'],
-    ['Je réalise un erasmus à Stockholm à KTH durant 1 semestre','I\'m doing an erasmus in Stockholm at KTH for 1 semester']
+    ['J’ai réalisé un erasmus à Stockholm à KTH durant 1 semestre','I did an erasmus in Stockholm at KTH for 1 semester'],
+    ['Je fais mon stage de fin d’études à Lille dans le service Recherche et Développement Sportslab de Decathlon en simulation numérique','I’m doing my end-of-studies internship in Lille in Decathlon’s Sportslab Research and Development department, working on digital simulation.']
   ];
   cv=['Télécharger mon CV', 'Download my CV'];
   cvassets=["./assets/CV_FAVREAU_Sibylle.pdf","./assets/Curriculum_FAVREAU_Sibylle.pdf"];
